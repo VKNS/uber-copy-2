@@ -1,3 +1,22 @@
+.main-ad {
+  margin-top: 200px;
+  height: 500px;
+  width: 496px;
+  background-color: blue;
+}
+
+.catchphrase {
+  height: 65px;
+  width: 100%;
+}
+/*
+#MainPhrase {
+}
+
 .ad-picture {
   background-image: url(https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/c70b8eba-a194-42c9-b734-00bd27cda456/desk.jpg);
 }
+
+.start-using {
+}
+*/

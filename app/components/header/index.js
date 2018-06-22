@@ -9,27 +9,27 @@ class Header extends PureComponent {
       <div>
         <header>
           <nav>
-            <div className="logo nav-block">
+            <div className="logo row-1">
               <a href="/">
                 <img src={UbLogo} alt="UBER" />
               </a>
             </div>
 
-            <div className="whitespace nav-block" />
+            <div className="whitespace row-1" />
 
-            <div className="location-icon nav-block">
+            <div className="location-icon row-1">
               <a href="/">
                 <img src={LocIcon} alt="LOC" />
               </a>
             </div>
 
-            <div className="driver nav-block">
+            <div className="driver row-1">
               <a className="btn-driver" href="/">
                 cтать водителем
               </a>
             </div>
 
-            <div className="menu nav-block">
+            <div className="menu row-1">
               <div className="lines first-line " />
               <div className="lines second-line " />
               <div className="lines third-line " />

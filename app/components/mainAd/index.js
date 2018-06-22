@@ -4,12 +4,14 @@ import './styles/mainAd.css';
 class MainAd extends React.Component {
   render() {
     return (
-      <div class="main-ad">
-        <div class="catchprase">
-          <h1 id="MainPhrase">В путь с Uber День принадлежит вам </h1>
+      <div className="main-ad">
+        <h2>HELLO</h2>
+        <div className="catchprase">
+          <h1 id="MainPhrase">В путь с Uber </h1>
+          <p>День принадлежит вам</p>
         </div>
-        <div class="ad-picture" />
-        <div class="start-using" />
+        <div className="ad-picture" />
+        <div className="start-using" />
       </div>
     );
   }
