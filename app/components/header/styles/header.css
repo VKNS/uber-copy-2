@@ -1,0 +1,116 @@
+body {
+  margin: 0px;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+  color: black;
+}
+
+header {
+  display: inline-block;
+  position: fixed;
+  z-index: 999;
+  height: 51px;
+  padding: 5px 20px 5px 20px;
+  text-align: center;
+}
+
+nav {
+  display: inline-block;
+  height: 100%;
+  background-color: white;
+}
+
+.nav-block {
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+}
+
+.logo {
+  width: 100px;
+  background-color: white;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.whitespace {
+  width: 150px;
+  box-sizing: border-box;
+}
+
+.location-icon {
+  width: 25px;
+  background-color: white;
+  padding-top: 9px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.location-icon:hover {
+  cursor: pointer;
+}
+
+.driver {
+  width: 140px;
+  background-color: black;
+  font-size: 0.7em;
+  text-transform: uppercase;
+
+  line-height: 3.5;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  padding-left: 7px;
+  padding-right: 7px;
+  transition: all 0.2s cubic-bezier(0.9, 0, 0.1, 1);
+  box-sizing: border-box;
+}
+
+.driver:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.btn-driver {
+  color: white;
+  height: 100%;
+}
+
+.menu {
+  margin: 0px;
+  width: 41px;
+  background-color: initial;
+  box-sizing: border-box;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.lines {
+  margin: 0px;
+  box-sizing: border-box;
+  width: 17px;
+  height: 3px;
+  position: relative;
+  background-color: black;
+}
+
+.first-line {
+  margin: 12px 12px 0px 12px;
+}
+
+.second-line {
+  margin: 4px 12px 0px 12px;
+}
+
+.third-line {
+  margin: 4px 12px 0px 12px;
+}
+
+header,
+a {
+  text-decoration: none;
+}
