@@ -12,6 +12,10 @@
 import React from 'react';
 import Header from 'components/header';
 import MainAd from 'components/mainAd';
+import ClientAdv from 'components/clientAdv';
+import TripPriceCount from 'components/tripPriceCount';
+import DriversAdv from 'components/driversAdv';
+import './styles/homePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
@@ -20,6 +24,9 @@ export default class HomePage extends React.PureComponent {
       <div className="container">
         <Header />
         <MainAd />
+        <ClientAdv />
+        <TripPriceCount />
+        <DriversAdv />
       </div>
     );
   }

@@ -1,0 +1,9 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  color: #000000;
+  /*background-color: #ffffff;*/
+}
+
+.container {
+  background-color: #ffffff;
+}

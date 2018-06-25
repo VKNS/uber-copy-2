@@ -1,18 +1,26 @@
 import React from 'react';
 import './styles/mainAd.css';
+import arrowImg from './images/arrow.svg';
 
 class MainAd extends React.Component {
   render() {
     return (
-      <div className="main-ad">
-        <h2>HELLO</h2>
+      <section className="main-advantages">
         <div className="catchprase">
-          <h1 id="MainPhrase">В путь с Uber </h1>
-          <p>День принадлежит вам</p>
+          <div className="inner-div">
+            <h1 className="main-phrase">В путь с Uber </h1>
+            <h1 className="main-phrase">День принадлежит вам</h1>
+          </div>
         </div>
         <div className="ad-picture" />
-        <div className="start-using" />
-      </div>
+        <div className="mb-use">
+          <div className="column-1 plz-use ">Начните пользоваться Uber</div>
+          <div className="column-1 plz-download ">скачать приложение</div>
+          <div className="column-1 arrow ">
+            <img src={arrowImg} alt="arr" />
+          </div>
+        </div>
+      </section>
     );
   }
 }

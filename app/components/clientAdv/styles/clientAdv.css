@@ -1,0 +1,88 @@
+.clients-adv {
+  width: 475px;
+  height: 100%;
+  /*margin-left: 14px;
+  margin-right: 14px;/*
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+
+  /*background-color: blueviolet;*/
+  /*padding-top: 0px;*/
+}
+
+.clients-adv .imgBox {
+  height: 125px;
+  width: 125px;
+}
+
+.row-3 img {
+  height: 125px;
+  width: 125px;
+}
+
+.advantages-text {
+  height: 100%;
+  width: 100%;
+}
+
+.clients-adv,
+.row-3 {
+  padding-left: 14px;
+  padding-right: 14px;
+  /*padding-top: 0px;*/
+  word-spacing: -0.8px;
+  letter-spacing: -0.4px;
+}
+
+.clients-adv,
+.row-3 h4 {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.clients-adv,
+.row-3 p {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  text-align: justify;
+  font-size: 0.97em;
+  line-height: 2em;
+}
+/*
+.clients-adv,
+.row-3 .advantages-text {
+  margin-top: 0px;
+}*/
+
+.row-4 {
+  padding-left: 14px;
+  padding-bottom: 45px;
+}
+
+.clients-adv .advantages-link {
+  background-color: black;
+  height: 40px;
+  width: 300px;
+  /*padding-left: 15px;*/
+  text-align: center;
+  /*margin: 5px;*/
+}
+
+.advantages-link:hover {
+  background-color: #504a4a;
+  cursor: pointer;
+}
+
+.advantages-link .link {
+  font-weight: 700;
+  font-size: 90%;
+  text-transform: uppercase;
+  letter-spacing: -0.8px;
+  color: #ffffff;
+  display: inline-block;
+  padding-top: 4px;
+}
+
+.advantages-link .arrow {
+  display: inline-block;
+  padding-left: 5px;
+}

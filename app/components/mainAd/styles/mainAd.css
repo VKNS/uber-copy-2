@@ -1,22 +1,69 @@
-.main-ad {
-  margin-top: 200px;
-  height: 500px;
-  width: 496px;
-  background-color: blue;
+.main-advantages {
+  margin-top: 30px;
+  height: 430px;
+  width: 476px;
+  /*background-color: blue;*/
 }
 
 .catchphrase {
-  height: 65px;
+  height: 200px;
   width: 100%;
 }
-/*
-#MainPhrase {
+
+.inner-div {
+  margin: 20px;
+  /*background-color: azure;*/
+  font-family: inherit;
+}
+
+.main-phrase {
+  color: #000000;
+  font-weight: lighter;
+  line-height: 55%;
+  font-size: 170%;
+  letter-spacing: -0.4px;
 }
 
 .ad-picture {
+  height: 270px;
   background-image: url(https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/c70b8eba-a194-42c9-b734-00bd27cda456/desk.jpg);
+  background-size: cover;
+  margin-top: 55px;
 }
 
-.start-using {
+.mb-use {
+  background-color: #000000;
+  height: 150px;
+  width: 150px;
+  color: #ffffff;
+  position: relative;
+  left: 305px;
+  bottom: 135px;
+  z-index: 1;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
-*/
+
+.mb-use:hover {
+  background-color: #504a4a;
+  cursor: pointer;
+}
+/*
+.column-1 {
+}*/
+
+.plz-use {
+  line-height: 100%;
+}
+
+.plz-download {
+  font-weight: bold;
+  font-size: 90%;
+  text-transform: uppercase;
+  /*margin-top: 10px;*/
+}
+
+.arrow {
+  /*margin-top: 10px;*/
+}
