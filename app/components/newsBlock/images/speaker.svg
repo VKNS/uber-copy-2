@@ -1,0 +1,15 @@
+<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88" height="88" width="88" style="display: block; height: 100%; width: 100%;"><title>Decorative Illustration</title><desc>Decorative Illustration</desc>
+    <defs>
+        <pattern id="a___-793494343" data-name="2/2 - black" width="4" height="4" patternUnits="userSpaceOnUse" viewBox="0 0 4 4">
+            <path fill="none" d="M0 0h4v4H0z"></path>
+            <path d="M0 0h2v2H0z"></path>
+        </pattern>
+    </defs>
+    <circle cx="81.95" cy="44" r="6.05" style="fill: rgb(137, 218, 193);"></circle>
+    <path d="M14.56 32.45h35.73v23.1H14.56z" style="fill: rgb(137, 218, 193);"></path>
+    <path d="M8.77 35.23h5.79v17.54H8.77A8.77 8.77 0 0 1 0 44a8.77 8.77 0 0 1 8.77-8.77zm31.14-2.78v23.1a54.6 54.6 0 0 1 38.61 16l2 2V14.46l-2 2a54.6 54.6 0 0 1-38.61 15.99z" fill="#d6d6d5"></path>
+    <path d="M14.56 44h25.35v11.55H14.56z"></path>
+    <path d="M80.52 73.54V44H39.91v11.54a54.6 54.6 0 0 1 38.61 16z" fill="url(#a___-793494343)"></path>
+    <path d="M27.23 55.55h12.68v26h-1.69a11 11 0 0 1-11-11v-15h.01z" style="fill: rgb(88, 121, 218);"></path>
+    <path d="M80.52 14.46a2.86 2.86 0 0 1 2.86 2.86v53.36a2.86 2.86 0 0 1-2.86 2.86V14.46z"></path>
+</svg>

@@ -7,16 +7,15 @@ class DriversAdv extends React.Component {
     return (
       <section className="drivers-advantages">
         <div className="inner-box">
-          <h2>
-            <div className="header">График выбираете вы</div>
-            <div className="header">Ваш доход</div>
-          </h2>
-          <h3>
-            <div className="add-text">
+          <div className="header">График выбираете вы</div>
+          <div className="header">Ваш доход</div>
+
+          <div className="add-text">
+            <h3>
               Сотрудничать с Uber — удобно и выгодно. Это возможность для
               водителей-партнеров иметь свободный график и дополнительный доход.
-            </div>
-          </h3>
+            </h3>
+          </div>
 
           <div className="drivers-adv-btn">
             <div className="drivers-link">

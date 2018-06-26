@@ -1,0 +1,45 @@
+.news-block {
+  width: 475px;
+  height: 100%;
+}
+
+.news-block h2 {
+  margin-bottom: 0px;
+  font-size: 22px;
+  font-weight: 300;
+  padding-left: 14px;
+}
+
+.news-block .imgBox {
+  height: 125px;
+  width: 125px;
+}
+
+.news-block .imgBox img {
+  height: 125px;
+  width: 125px;
+}
+
+.news-block,
+.row-7 {
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 40px;
+  word-spacing: -0.8px;
+  letter-spacing: -0.4px;
+}
+
+.news-block,
+.row-7 h4 {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.news-block,
+.row-7 p {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  text-align: justify;
+  font-size: 0.97em;
+  line-height: 2em;
+}

@@ -1,0 +1,55 @@
+/*************BLOCKS-POSITIONING etc*******************/
+
+.company-adv .img-box {
+  background-image: url(https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/4878ffeb-2036-485f-b274-73f0f36e3a71/palm.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 230px;
+}
+
+.company-adv .text-box {
+  padding: 25px 70px 20px 40px;
+}
+
+.text-box h2 {
+  margin-top: 0px;
+}
+
+.text-box .header-box p {
+  margin-bottom: 4px;
+}
+
+.btn-more .arrow {
+  padding-left: 8px;
+  /*padding-bottom: 9px;*/
+}
+/*************BLOCKS-POSITIONING etc*******************/
+
+/**********************TEXT****************************/
+
+.company-adv h2,
+p {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.text-box h2 {
+  font-weight: 300;
+  font-size: 1.35em;
+}
+
+.text-box .description p {
+  font-size: 0.875em;
+  line-height: 2;
+  text-align: left;
+  word-spacing: -2px;
+}
+
+.btn-more {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: -0.2px;
+}
+
+/*********************TEXT*****************************/
