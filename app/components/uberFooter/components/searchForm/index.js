@@ -1,5 +1,7 @@
 import React from 'react';
-import arrowImg from '../../images/arrow.svg';
+import './styles/searchForm.css';
+import arrowImg from './images/arrow.svg';
+import cityImg from './images/city.svg';
 
 export default class SearchForm extends React.PureComponent {
   render() {
@@ -13,13 +15,16 @@ export default class SearchForm extends React.PureComponent {
             </h3>
           </div>
           <div className="input-box">
-            <div className="row actual-input-box">
+            <div className="row input-box-1">
               <input placeholder="Найти город" />
             </div>
             <div className="row btn-search">
               <img src={arrowImg} alt="" />
             </div>
           </div>
+        </div>
+        <div className="img-box">
+          <img src={cityImg} alt="city pic" />
         </div>
       </section>
     );

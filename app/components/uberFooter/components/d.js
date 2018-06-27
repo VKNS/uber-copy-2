@@ -4,7 +4,7 @@ import DoublingLinks from './components/doublingLinks';
 import MobileLinks from './components/mobileLinks';
 import ActuallyFooter from './components/actuallyFooter';
 
-<CityPic />
+
         <SocialLinks />
         <DoublingLinks />
         <MobileLinks />

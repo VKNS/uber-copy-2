@@ -1,0 +1,74 @@
+/*SEARCHFORM*/
+
+/*...................POSITIONING.......................*/
+.search-form {
+  background-color: #f8f8f9;
+  height: 100%;
+}
+
+.inner-search-form {
+  height: 100%;
+  width: 100%;
+  padding: 25px 34px 45px 24px;
+}
+
+.search-form .header-box {
+  padding-bottom: 5px;
+}
+
+.search-form span {
+  display: block;
+}
+
+.search-form .input-box {
+  /*height: 45px;*/
+  width: 100%;
+}
+
+.input-box .row {
+  display: inline-block;
+  background-color: #ffffff;
+}
+
+.input-box-1 {
+  width: 393px;
+  height: 45px;
+}
+
+.search-form input {
+  width: 100%;
+  padding: 15.3px 45px 15.3px 20px;
+}
+
+.input-box .btn-search {
+  width: 45px;
+  height: 100%;
+  background-color: black;
+  vertical-align: top;
+  transition: all 250ms ease;
+}
+
+.input-box .btn-search:hover {
+  background-color: #5f5e5e;
+  cursor: pointer;
+}
+
+.btn-search img {
+  padding: 14.5px 14.5px;
+}
+
+.search-form .img-box img {
+  width: 100%;
+  height: 65px;
+}
+
+/***************TEXT*****************/
+
+.search-form span {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.search-form input {
+  font-size: 0.8em;
+}

@@ -56,8 +56,12 @@
   position: relative;
   top: -200px;
   left: 425px;
+  transition: all 250ms ease;
 }
 
+.inner-drivers-adv .arrow-box:hover {
+  opacity: 0.65;
+}
 /*********************ARROW****************************/
 
 /**********************TEXT****************************/

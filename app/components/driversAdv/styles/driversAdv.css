@@ -35,6 +35,11 @@
 .drivers-adv-btn {
   background-color: black;
   width: 100%;
+  transition: all 250ms ease;
+}
+
+.drivers-adv-btn:hover {
+  transform: translateX(2.5px);
 }
 
 .drivers-link {
@@ -43,6 +48,10 @@
   text-transform: uppercase;
   text-align: center;
   padding: 2px 25px;
+}
+
+.drivers-link:hover {
+  color: #ebe7e7;
 }
 
 .arrow-box {
