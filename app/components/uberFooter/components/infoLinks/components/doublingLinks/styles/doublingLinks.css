@@ -1,0 +1,38 @@
+/*DOUBLING LINKS*/
+/*...................POSITIONING.......................*/
+
+.doubling-links .column {
+  padding-top: 40px;
+}
+
+.doubling-links .for-users {
+  padding-top: 55px;
+}
+
+.doubling-links a {
+  display: block;
+  padding: 10px 0;
+}
+
+/***************TEXT*****************/
+
+.doubling-links a {
+  color: #c0c0c0;
+  text-decoration: none;
+  font-size: 0.9em;
+  letter-spacing: -0.2px;
+  transition: all 150ms ease;
+}
+
+.doubling-links a:hover {
+  color: #7e7c7c;
+}
+
+.doubling-links .title {
+  color: #ffffff;
+  transition: all 150ms ease;
+}
+
+.doubling-links .title:hover {
+  color: #a3a1a1;
+}

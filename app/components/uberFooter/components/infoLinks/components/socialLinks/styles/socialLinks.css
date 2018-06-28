@@ -1,0 +1,52 @@
+/*SOCIAL LINKS*/
+
+/*...................POSITIONING.......................*/
+
+.social-links .column {
+  height: 50px;
+  width: 100%;
+  border-top: #282727 solid 1px;
+  border-bottom: #282727 solid 1px;
+}
+
+.social-links .link {
+  display: inline-block;
+  padding-top: 10px;
+  height: 30px;
+}
+
+.link .icon {
+  display: inline-block;
+  padding-right: 15px;
+  padding-top: 2px;
+  /*height: 16px;*/
+}
+
+.link .icon img {
+  vertical-align: top;
+  /*padding-top: 0px;*/
+}
+
+.link .description {
+  vertical-align: top;
+}
+
+.social-links .mass-icons {
+  height: 60px;
+}
+
+.mass-icons .icon {
+  padding-right: 25px;
+}
+
+/***************TEXT*****************/
+
+.link a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.93em;
+}
+
+.link .lang-link {
+  text-transform: uppercase;
+}

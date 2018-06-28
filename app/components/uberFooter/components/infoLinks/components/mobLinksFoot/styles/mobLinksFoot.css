@@ -1,0 +1,59 @@
+/**************mobile-links*************/
+/*...................POSITIONING.......................*/
+
+.mobile-links {
+  border-top: #282727 solid 1px;
+  border-bottom: #282727 solid 1px;
+}
+
+.mobile-links .first-pic {
+  padding: 20px 0px;
+}
+
+.mobile-links .second-pic {
+  padding: 0px 0px 20px 0px;
+}
+
+.mobile-links img {
+  height: 35px;
+}
+
+/**************FOOTER *************/
+/*...................POSITIONING.......................*/
+.footer {
+  padding-top: 15px;
+}
+
+.copyright {
+  display: inline-block;
+
+  vertical-align: top;
+}
+
+.links {
+  display: inline-block;
+  padding-left: 80px;
+}
+
+.links a {
+  display: block;
+}
+
+/***************TEXT*****************/
+.copyright {
+  color: #c0c0c0;
+  font-weight: 300;
+  font-size: 0.65em;
+}
+
+.links a {
+  color: white;
+  font-weight: 300;
+  font-size: 0.65em;
+  text-decoration: none;
+  transition: all 150ms ease;
+}
+
+.links a:hover {
+  color: #c0c0c0;
+}
