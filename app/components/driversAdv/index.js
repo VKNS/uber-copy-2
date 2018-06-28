@@ -20,9 +20,9 @@ class DriversAdv extends React.Component {
           <div className="drivers-adv-btn">
             <div className="drivers-link">
               преимущества работы водителем-партнером uber
-              <div className="arrow-box">
+              <span className="arrow-box">
                 <img src={arrowImg} alt="arr" />
-              </div>
+              </span>
             </div>
           </div>
         </div>

@@ -3,11 +3,11 @@ import './styles/driversReviews.css';
 import arrowImg from './images/arrow.svg';
 import { firstCard } from './text/driversReviews.json';
 
-class DriversRewiews extends React.Component {
+class DriversReviews extends React.Component {
   render() {
     return (
-      <section className="drivers-adv">
-        <div className="inner-drivers-adv">
+      <section className="drivers-rev">
+        <div className="inner-drivers-rev">
           <div className="header-box">
             <p>За рулем</p>
             <h2>Наши водители-партнеры</h2>
@@ -36,4 +36,4 @@ class DriversRewiews extends React.Component {
   }
 }
 
-export default DriversRewiews;
+export default DriversReviews;

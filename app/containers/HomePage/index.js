@@ -15,7 +15,7 @@ import MainAd from 'components/mainAd';
 import ClientAdv from 'components/clientAdv';
 import TripPriceCount from 'components/tripPriceCount';
 import DriversAdv from 'components/driversAdv';
-import DriversRewiews from 'components/driversReviews';
+import DriversReviews from 'components/driversReviews';
 import CompanyAdv from 'components/companyAdv';
 import NewsBlock from 'components/newsBlock';
 import UberFooter from 'components/uberFooter';
@@ -31,7 +31,7 @@ export default class HomePage extends React.PureComponent {
         <ClientAdv />
         <TripPriceCount />
         <DriversAdv />
-        <DriversRewiews />
+        <DriversReviews />
         <CompanyAdv />
         <NewsBlock />
         <UberFooter />

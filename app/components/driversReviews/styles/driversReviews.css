@@ -1,9 +1,9 @@
 /*************BLOCKS-POSITIONING etc*******************/
-.drivers-adv {
+.drivers-rev {
   width: 100%;
 }
 
-.inner-drivers-adv {
+.inner-drivers-rev {
   padding-top: 30px;
   padding-left: 24px;
   padding-right: 34px;
@@ -13,11 +13,11 @@
   padding-left: 3px;
 }
 
-.drivers-adv p {
+.drivers-rev p {
   margin-bottom: 0px;
 }
 
-.drivers-adv h2 {
+.drivers-rev h2 {
   margin-top: 0px;
   margin-bottom: 30px;
 }
@@ -47,19 +47,19 @@
 
 /*********************ARROW****************************/
 
-.inner-drivers-adv .arrow-box {
+.inner-drivers-rev .arrow-box {
   background-color: black;
   height: 33px;
   width: 35px;
 
-  padding: 7px 6px 9px 6px;
+  padding: 3px 6px 9px 6px;
   position: relative;
   top: -200px;
   left: 425px;
   transition: all 250ms ease;
 }
 
-.inner-drivers-adv .arrow-box:hover {
+.inner-drivers-rev .arrow-box:hover {
   opacity: 0.65;
 }
 /*********************ARROW****************************/

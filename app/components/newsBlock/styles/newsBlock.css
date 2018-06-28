@@ -47,3 +47,11 @@
   font-size: 0.97em;
   line-height: 2em;
 }
+
+.news-block .btn-more span {
+  font-weight: 700;
+}
+
+.news-block .btn-more .arrow {
+  padding-top: 7.3px;
+}

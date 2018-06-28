@@ -1,23 +1,21 @@
 header {
   display: inline-block;
-  /*position: fixed;
-  z-index: 999;*/
-  height: 51px;
-  padding: 5px 20px 5px 20px;
-  margin: 0px;
-  text-align: center;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: #ffffff;
 }
 
 nav {
   display: inline-block;
   height: 100%;
-  background-color: white;
-  padding: 0px;
+  width: 100%;
+  padding: 5px 24px 10px 24px;
 }
 
 .row-1 {
   display: inline-block;
-  height: 100%;
   vertical-align: top;
 }
 
@@ -25,11 +23,6 @@ nav {
   width: 100px;
   background-color: white;
   padding-top: 10px;
-  box-sizing: border-box;
-}
-
-.logo:hover {
-  cursor: pointer;
 }
 
 .whitespace {
@@ -39,38 +32,25 @@ nav {
 
 .location-icon {
   width: 25px;
-  background-color: white;
   padding-top: 9px;
   padding-right: 10px;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.location-icon:hover {
-  cursor: pointer;
 }
 
 .driver {
-  width: 120px;
+  width: 130px;
   height: 90%;
   background-color: black;
   font-size: 0.7em;
   text-transform: uppercase;
-
   line-height: 3;
   font-weight: bold;
   letter-spacing: -0.4px;
-  color: rgb(255, 255, 255);
-  padding-left: 5px;
-  padding-right: 5px;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 5px;
   transition: all 0.2s cubic-bezier(0.9, 0, 0.1, 1);
   box-sizing: border-box;
-}
-
-.driver:hover {
-  cursor: pointer;
-  background-color: grey;
 }
 
 .btn-driver {
@@ -80,14 +60,10 @@ nav {
 
 .menu {
   padding-top: 3px;
-  margin: 0px;
+  padding-left: 5px;
   width: 41px;
   background-color: initial;
   box-sizing: border-box;
-}
-
-.menu:hover {
-  cursor: pointer;
 }
 
 .lines {
@@ -113,4 +89,23 @@ nav {
 
 header a {
   text-decoration: none;
+}
+
+/*.......    ANIMATIONS   ............*/
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.location-icon:hover {
+  cursor: pointer;
+}
+
+.driver:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.menu:hover {
+  cursor: pointer;
 }

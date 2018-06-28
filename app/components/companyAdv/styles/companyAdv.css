@@ -20,8 +20,22 @@
   margin-bottom: 4px;
 }
 
+.btn-more {
+  width: 140px;
+}
+
+.btn-more span {
+  vertical-align: top;
+}
+
 .btn-more .arrow {
+  display: inline-block;
   padding-left: 8px;
+  padding-top: 2.5px;
+}
+
+.btn-more img {
+  vertical-align: top;
 }
 /*************BLOCKS-POSITIONING etc*******************/
 
@@ -49,13 +63,24 @@ p {
   text-transform: uppercase;
   font-size: 0.9em;
   letter-spacing: -0.2px;
-  transition: all 400ms ease;
-  transform: translateX(0px);
-}
-
-.btn-more:hover {
-  color: #777676;
-  transform: translateX(2.5px);
 }
 
 /*********************TEXT*****************************/
+
+/*....................ANIMATIONS.........................*/
+
+.btn-more span {
+  transition: all 400ms ease;
+}
+
+.btn-more .arrow {
+  transition: all 400ms ease;
+}
+
+.btn-more:hover {
+  opacity: 0.5;
+}
+
+.btn-more:hover .arrow {
+  transform: translateX(2.5px);
+}

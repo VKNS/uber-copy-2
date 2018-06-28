@@ -22,7 +22,6 @@
 .row-3 {
   padding-left: 14px;
   padding-right: 14px;
-  /*padding-top: 0px;*/
   word-spacing: -0.8px;
   letter-spacing: -0.4px;
 }
@@ -41,11 +40,6 @@
   font-size: 0.97em;
   line-height: 2em;
 }
-/*
-.clients-adv,
-.row-3 .advantages-text {
-  margin-top: 0px;
-}*/
 
 .row-4 {
   padding-left: 14px;
@@ -56,14 +50,7 @@
   background-color: black;
   height: 40px;
   width: 300px;
-  /*padding-left: 15px;*/
   text-align: center;
-  /*margin: 5px;*/
-}
-
-.advantages-link:hover {
-  background-color: #504a4a;
-  cursor: pointer;
 }
 
 .advantages-link .link {
@@ -79,4 +66,23 @@
 .advantages-link .arrow {
   display: inline-block;
   padding-left: 5px;
+}
+
+/*....................ANIMATIONS.........................*/
+
+.advantages-link .link {
+  transition: all 400ms ease;
+}
+
+.advantages-link .arrow {
+  transition: all 400ms ease;
+}
+
+.advantages-link:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.advantages-link:hover .arrow {
+  transform: translateX(4px);
 }

@@ -1,8 +1,6 @@
 .main-advantages {
-  margin-top: 30px;
+  padding-top: 75px;
   height: 430px;
-  width: 476px;
-  /*background-color: blue;*/
 }
 
 .catchphrase {
@@ -12,7 +10,6 @@
 
 .inner-div {
   margin: 20px;
-  /*background-color: azure;*/
   font-family: inherit;
 }
 
@@ -45,14 +42,6 @@
   padding-left: 15px;
 }
 
-.mb-use:hover {
-  background-color: #504a4a;
-  cursor: pointer;
-}
-/*
-.column-1 {
-}*/
-
 .plz-use {
   line-height: 100%;
 }
@@ -61,9 +50,23 @@
   font-weight: bold;
   font-size: 90%;
   text-transform: uppercase;
-  /*margin-top: 10px;*/
 }
 
-.arrow {
-  /*margin-top: 10px;*/
+/*....................ANIMATIONS.........................*/
+
+.mb-use {
+  transition: all 400ms ease;
+}
+
+.mb-use .arrow {
+  transition: all 400ms ease;
+}
+
+.mb-use:hover {
+  background-color: #504a4a;
+  cursor: pointer;
+}
+
+.mb-use:hover .arrow {
+  transform: translateX(4px);
 }
