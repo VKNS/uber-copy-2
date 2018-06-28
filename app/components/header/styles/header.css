@@ -2,8 +2,8 @@ header {
   display: inline-block;
   height: 60px;
   width: 100%;
-  position: fixed;
-  z-index: 999;
+  /*position: fixed;
+  z-index: 999;*/
   background-color: #ffffff;
 }
 
