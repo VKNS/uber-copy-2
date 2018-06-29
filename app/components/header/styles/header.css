@@ -1,3 +1,5 @@
+/*------------------------ 1024- ----------------------------*/
+
 header {
   display: inline-block;
   height: 60px;
@@ -8,16 +10,18 @@ header {
 }
 
 nav {
-  display: inline-block;
   height: 100%;
   width: 100%;
   padding: 5px 24px 10px 24px;
-}
 
+  display: flex;
+  flex-wrap: wrap;
+}
+/*
 .row-1 {
   display: inline-block;
-  vertical-align: top;
-}
+
+}*/
 
 .logo {
   width: 100px;
@@ -26,14 +30,15 @@ nav {
 }
 
 .whitespace {
-  width: 150px;
-  box-sizing: border-box;
+  flex-grow: 1;
+  flex-basis: 10%;
 }
 
 .location-icon {
   width: 25px;
   padding-top: 9px;
-  padding-right: 10px;
+  /*padding-right: 10px;
+  text-align: right;*/
 }
 
 .driver {
@@ -50,12 +55,12 @@ nav {
   padding-right: 10px;
   margin-top: 5px;
   transition: all 0.2s cubic-bezier(0.9, 0, 0.1, 1);
-  box-sizing: border-box;
 }
 
 .btn-driver {
   color: white;
   height: 100%;
+  /*text-align: right;*/
 }
 
 .menu {
@@ -64,6 +69,7 @@ nav {
   width: 41px;
   background-color: initial;
   box-sizing: border-box;
+  /*text-align: right;*/
 }
 
 .lines {
@@ -91,7 +97,7 @@ header a {
   text-decoration: none;
 }
 
-/*.......    ANIMATIONS   ............*/
+/*................    ANIMATIONS    .................*/
 
 .logo:hover {
   cursor: pointer;
@@ -108,4 +114,61 @@ header a {
 
 .menu:hover {
   cursor: pointer;
+}
+
+/*------------------------ 1024+ ----------------------------*/
+
+.nav-links {
+  padding: 10px 10px 0px 10px;
+}
+
+.from1024 {
+  display: none;
+}
+
+/*.................TEXT........................*/
+
+.nav-links a {
+  text-align: center;
+  color: #000000;
+  font-size: 1.07rem;
+}
+
+.right a {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding-top: 15px;
+}
+
+.left a {
+  padding-top: 13px;
+}
+/*................    ANIMATIONS    .................*/
+
+.nav-links:hover {
+  cursor: pointer;
+}
+.nav-links:hover a {
+  border-top: 5px solid;
+}
+
+/*------------------------ 1024+ ----------------------------*/
+/*.................SIZING.....................*/
+
+@media screen and (min-width: 574px) and (max-width: 768px) {
+  nav {
+    padding: 5px 48px 10px 48px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  nav {
+    padding: 5px 6.6vw 10px 6.6vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .from1024 {
+    display: inline-block;
+  }
 }

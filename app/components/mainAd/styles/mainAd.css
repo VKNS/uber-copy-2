@@ -1,17 +1,8 @@
 .main-advantages {
-  /*padding-top: 75px;*/
-
-  height: 430px;
 }
 
 .catchphrase {
-  height: 200px;
-  width: 100%;
-}
-
-.inner-div {
-  margin: 20px;
-  font-family: inherit;
+  padding: 0px 24px;
 }
 
 .main-phrase {
@@ -35,7 +26,7 @@
   width: 150px;
   color: #ffffff;
   position: relative;
-  left: 305px;
+  left: 60%;
   bottom: 135px;
   z-index: 1;
   padding-top: 15px;
@@ -70,4 +61,53 @@
 
 .mb-use:hover .arrow {
   transform: translateX(4px);
+}
+
+/*.................SIZING.....................*/
+
+@media screen and (min-width: 574px) and (max-width: 768px) {
+  .catchphrase {
+    padding: 0px 48px 0px 48px;
+  }
+
+  .ad-picture {
+    height: 330px;
+  }
+
+  .mb-use {
+    left: 75%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .catchphrase {
+    padding: 20px 6.6vw 20px 6.6vw;
+  }
+
+  .ad-picture {
+    height: 370px;
+  }
+
+  .mb-use {
+    bottom: 115px;
+    left: 75%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .main-phrase {
+    font-size: 220%;
+  }
+
+  .till1024 {
+    display: none;
+  }
+
+  .ad-picture {
+    height: 480px;
+  }
+
+  .mb-use {
+    bottom: 95px;
+  }
 }
