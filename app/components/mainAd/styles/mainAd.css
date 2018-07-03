@@ -1,6 +1,3 @@
-.main-advantages {
-}
-
 .catchphrase {
   padding: 0px 24px;
 }
@@ -95,6 +92,10 @@
 }
 
 @media screen and (min-width: 1025px) {
+  .main-advantages {
+    padding-bottom: 350px;
+  }
+
   .main-phrase {
     font-size: 220%;
   }

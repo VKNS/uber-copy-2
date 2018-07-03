@@ -1,5 +1,5 @@
 .news-block {
-  width: 475px;
+  width: 100%;
   height: 100%;
 }
 
@@ -48,10 +48,115 @@
   line-height: 2em;
 }
 
+/*....................button-more.........................*/
+
+.news-block .btn-more {
+  width: 140px;
+}
+
+.news-block .btn-more span {
+  vertical-align: top;
+}
+
+.news-block .btn-more .arrow {
+  display: inline-block;
+  padding-left: 8px;
+  padding-top: 2.5px;
+}
+
+.news-block .btn-more img {
+  vertical-align: top;
+}
+
+.news-block .btn-more {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: -0.2px;
+}
+
+.news-block .btn-more span {
+  transition: all 400ms ease;
+}
+
+.news-block .btn-more .arrow {
+  transition: all 400ms ease;
+}
+
+.news-block .btn-more:hover {
+  opacity: 0.5;
+}
+
+.news-block .btn-more:hover .arrow {
+  transform: translateX(2.5px);
+}
 .news-block .btn-more span {
   font-weight: 700;
 }
 
 .news-block .btn-more .arrow {
   padding-top: 7.3px;
+}
+
+/*..................FLEXIM..........................*/
+
+.news-block .flex-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.news-block .row-7 {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+}
+/*......................SIZING...............................*/
+
+@media screen and (max-width: 576px) {
+  .news-block .flex-box {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .news-block h2 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .news-block {
+    padding: 30px 6.6vw 40px 6.6vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .news-block {
+    padding: 30px 12.6vw 40px 12.6vw;
+  }
+
+  .flex-box {
+    padding: 20px 0px 20px 0px;
+  }
+
+  .news-block .column-1 {
+    border-right: 1.5px solid #f8f8f9;
+  }
+  .news-block .column-2 {
+    border-left: 1.5px solid #f8f8f9;
+  }
+
+  .news-block .row-7 {
+    flex-direction: row;
+  }
+
+  .news-block .row-7 .outer-text-box {
+    padding-left: 25px;
+  }
+
+  .news-block .row-7 .text-box {
+    padding-right: 25px;
+  }
+
+  .news-block .row-7 h4 {
+    margin-top: 0px;
+  }
 }

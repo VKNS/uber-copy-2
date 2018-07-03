@@ -5,60 +5,56 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 230px;
+  height: 300px;
 }
 
 .company-adv .text-box {
-  padding: 25px 70px 20px 40px;
+  padding: 25px 40px 20px 40px;
+  background-color: transparent;
 }
 
-.text-box h2 {
+.company-adv .text-box h2 {
   margin-top: 0px;
 }
 
-.text-box .header-box p {
+.company-adv .text-box .header-box p {
   margin-bottom: 4px;
 }
 
-.btn-more {
+.company-adv .btn-more {
   width: 140px;
 }
 
-.btn-more span {
+.company-adv .btn-more span {
   vertical-align: top;
 }
 
-.btn-more .arrow {
+.company-adv .btn-more .arrow {
   display: inline-block;
   padding-left: 8px;
   padding-top: 2.5px;
 }
 
-.btn-more img {
+.company-adv .btn-more img {
   vertical-align: top;
 }
 /*************BLOCKS-POSITIONING etc*******************/
 
 /**********************TEXT****************************/
 
-.company-adv h2,
-p {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-.text-box h2 {
+.company-adv .text-box h2 {
   font-weight: 300;
   font-size: 1.35em;
 }
 
-.text-box .description p {
+.company-adv .text-box .description p {
   font-size: 0.875em;
   line-height: 2;
   text-align: left;
   word-spacing: -2px;
 }
 
-.btn-more {
+.company-adv .btn-more {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 0.9em;
@@ -69,18 +65,74 @@ p {
 
 /*....................ANIMATIONS.........................*/
 
-.btn-more span {
+.company-adv .btn-more span {
   transition: all 400ms ease;
 }
 
-.btn-more .arrow {
+.company-adv .btn-more .arrow {
   transition: all 400ms ease;
 }
 
-.btn-more:hover {
+.company-adv .btn-more:hover {
   opacity: 0.5;
 }
 
-.btn-more:hover .arrow {
+.company-adv .btn-more:hover .arrow {
   transform: translateX(2.5px);
+}
+
+/*......................FLEXIM.........................*/
+
+.company-adv .flex-box {
+  display: flex;
+  flex-direction: column;
+}
+
+/*......................SIZING...............................*/
+
+@media screen and (min-width: 769px) {
+  .company-adv .from-1025 {
+    background-color: #f8f8f9;
+  }
+
+  .company-adv .flex-box {
+    flex-direction: row;
+  }
+
+  .company-adv .img-box {
+    height: 450px;
+    flex: 50%;
+  }
+
+  .company-adv .text-box {
+    flex: 50%;
+  }
+
+  .company-adv .text-box h2 {
+    font-weight: 400;
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .company-adv .flex-box {
+    padding: 90px;
+  }
+  .company-adv .text-box {
+    background-color: #ffffff;
+    flex: 35%;
+  }
+  .company-adv .img-box {
+    height: 530px;
+    flex: 65%;
+  }
+
+  .company-adv .text-box p {
+    font-size: 1.4em;
+  }
+
+  .company-adv .text-box h2 {
+    font-weight: 500;
+    font-size: 32px;
+  }
 }

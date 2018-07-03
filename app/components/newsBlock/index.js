@@ -8,38 +8,45 @@ import { news, info } from './text/newsBlock.json';
 const NewsBlock = () => (
   <section className="news-block">
     <h2>Будьте в курсе последних новостей компании Uber</h2>
-    <div className="row-7 column-1">
-      <div className="imgBox">
-        <img src={speakerImg} alt="" />
+    <div className="flex-box">
+      <div className="row-7 column-1">
+        <div className="imgBox">
+          <img src={speakerImg} alt="" />
+        </div>
+        <div className="outer-text-box">
+          <div className="heading">
+            <h4>Наши новости</h4>
+          </div>
+          <div className="text-box ">
+            <p>{news}</p>
+          </div>
+          <div className="btn-more">
+            <span>подробнее</span>
+            <span className="arrow">
+              <img src={arrowImg} alt="" />
+            </span>
+          </div>
+        </div>
       </div>
-      <div className="heading">
-        <h4>Наши новости</h4>
-      </div>
-      <div className="text-box ">
-        <p>{news}</p>
-      </div>
-      <div className="btn-more">
-        <span>подробнее</span>
-        <span className="arrow">
-          <img src={arrowImg} alt="" />
-        </span>
-      </div>
-    </div>
-    <div className="row-7 column-2">
-      <div className="imgBox">
-        <img src={globeImg} alt="" />
-      </div>
-      <div className="heading">
-        <h4>Информация о компании</h4>
-      </div>
-      <div className="text-box">
-        <p>{info}</p>
-      </div>
-      <div className="btn-more">
-        <span>подробнее</span>
-        <span className="arrow">
-          <img src={arrowImg} alt="" />
-        </span>
+
+      <div className="row-7 column-2">
+        <div className="imgBox">
+          <img src={globeImg} alt="" />
+        </div>
+        <div className="outer-text-box">
+          <div className="heading">
+            <h4>Информация о компании</h4>
+          </div>
+          <div className="text-box">
+            <p>{info}</p>
+          </div>
+          <div className="btn-more">
+            <span>подробнее</span>
+            <span className="arrow">
+              <img src={arrowImg} alt="" />
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
