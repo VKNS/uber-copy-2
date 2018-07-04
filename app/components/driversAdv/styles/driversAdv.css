@@ -78,12 +78,13 @@
 /*......................SIZING...............................*/
 
 @media screen and (min-width: 769px) {
+  .inner-box {
+    padding: 120px 100px 40px 100px;
+  }
+
   .drivers-advantages {
     height: 460px;
   }
-}
-
-@media screen and (min-width: 769px) {
 }
 
 @media screen and (min-width: 1025px) {
@@ -97,6 +98,6 @@
   }
 
   .inner-box {
-    padding: 120px 12.6vw 40px 12.6vw;
+    padding: 120px 180px 40px 180px;
   }
 }

@@ -90,10 +90,6 @@ p {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-.header-box p {
-  /*font-size: 0.98em;*/
-}
-
 .header-box h2 {
   font-weight: 300;
   font-size: 1.35em;
@@ -145,6 +141,10 @@ p {
   .header-box h2 {
     font-size: 28px;
   }
+
+  .inner-drivers-rev {
+    padding: 120px 100px 40px 100px;
+  }
 }
 
 @media screen and (min-width: 1025px) {
@@ -153,6 +153,6 @@ p {
   }
 
   .inner-drivers-rev {
-    padding: 120px 12.6vw 40px 12.6vw;
+    padding: 180px 170px 40px 180px;
   }
 }

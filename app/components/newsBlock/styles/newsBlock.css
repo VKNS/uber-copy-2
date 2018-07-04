@@ -119,18 +119,19 @@
 }
 
 @media screen and (min-width: 769px) {
+  .news-block {
+    padding: 30px 100px 40px 100px;
+  }
+
   .news-block h2 {
     font-size: 28px;
     font-weight: 400;
-  }
-  .news-block {
-    padding: 30px 6.6vw 40px 6.6vw;
   }
 }
 
 @media screen and (min-width: 1025px) {
   .news-block {
-    padding: 30px 12.6vw 40px 12.6vw;
+    padding: 30px 180px 40px 180px;
   }
 
   .flex-box {

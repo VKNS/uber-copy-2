@@ -3,6 +3,10 @@ import './styles/companyAdv.css';
 import arrowImg from './images/small-arrow.svg';
 import { compAdv } from './text/companyAdv.json';
 
+function createMarkup(val) {
+  return { __html: val };
+}
+
 const CompanyAdv = () => (
   <section className="company-adv">
     <div className="from-1025">
@@ -14,7 +18,9 @@ const CompanyAdv = () => (
             <h2>Uber для бизнеса</h2>
           </div>
           <div className="description">
-            <p>{compAdv}</p>
+            <p>
+              <div dangerouslySetInnerHTML={createMarkup(compAdv)} />
+            </p>
           </div>
           <div className="btn-more">
             <span>подробнее</span>

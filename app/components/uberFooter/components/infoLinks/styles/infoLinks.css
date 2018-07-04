@@ -11,12 +11,12 @@
 
 @media screen and (min-width: 769px) {
   .inner-info-links {
-    padding: 70px 9.6vw 40px 9.6vw;
+    padding: 70px 48px 40px 48px;
   }
 }
 
 @media screen and (min-width: 1025px) {
-  /*.inner-info-links {
-    padding: 50px 12.6vw 40px 12.6vw;
-  }*/
+  .inner-info-links {
+    padding: 70px 90px 40px 90px;
+  }
 }

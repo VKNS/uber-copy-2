@@ -6,6 +6,10 @@ import pigImg from './images/piggy-bank.svg';
 import arrowImg from './images/arrow.svg';
 import { simple, comfortable, affordable } from './text/advantages.json';
 
+function createMarkup(val) {
+  return { __html: val };
+}
+
 const ClientAdv = () => (
   <section className="clients-adv">
     <div className="row">
@@ -17,7 +21,9 @@ const ClientAdv = () => (
           <h4>Просто</h4>
         </div>
         <div className="advantages-text ">
-          <p>{simple}</p>
+          <p>
+            <div dangerouslySetInnerHTML={createMarkup(simple)} />
+          </p>
         </div>
       </div>
       <div className="row-3 column-2">
@@ -28,7 +34,9 @@ const ClientAdv = () => (
           <h4>Удобно</h4>
         </div>
         <div className="advantages-text">
-          <p>{comfortable}</p>
+          <p>
+            <div dangerouslySetInnerHTML={createMarkup(comfortable)} />
+          </p>
         </div>
       </div>
       <div className="row-3 column-3">
@@ -39,7 +47,9 @@ const ClientAdv = () => (
           <h4>Доступно</h4>
         </div>
         <div className="advantages-text">
-          <p>{affordable}</p>
+          <p>
+            <div dangerouslySetInnerHTML={createMarkup(affordable)} />
+          </p>
         </div>
       </div>
     </div>

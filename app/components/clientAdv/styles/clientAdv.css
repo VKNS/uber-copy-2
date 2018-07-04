@@ -91,17 +91,10 @@
 /*.....................FLEXIM............................*/
 
 .row {
-  width: 100%; /*
-  height: 100%;*/
+  width: 100%;
   display: flex;
-  /*   flex-wrap: wrap;*/
   flex-direction: column;
 }
-/*
-.clients-adv,
-.row-3 {
-  flex: 1;
-}*/
 
 /*..............SIZING......................*/
 
@@ -109,11 +102,15 @@
 }
 
 @media screen and (min-width: 769px) {
+  .clients-adv {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 @media screen and (min-width: 1025px) {
   .clients-adv {
-    padding: 40px 12.6vw;
+    padding: 40px 180px;
   }
 
   .row {

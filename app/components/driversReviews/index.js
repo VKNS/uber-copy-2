@@ -3,6 +3,10 @@ import './styles/driversReviews.css';
 import arrowImg from './images/arrow.svg';
 import { firstCard, secondCard, thirdCard } from './text/driversReviews.json';
 
+function createMarkup(val) {
+  return { __html: val };
+}
+
 const DriversReviews = () => (
   <section className="drivers-rev">
     <div className="inner-drivers-rev">
@@ -15,8 +19,14 @@ const DriversReviews = () => (
           <div className="img-box" />
           <div className="text-box">
             <div className="inner-text-box">
-              <p>{firstCard.description}</p>
-              <p className="drivers-name">{firstCard.name}</p>
+              <p>
+                <div
+                  dangerouslySetInnerHTML={createMarkup(firstCard.description)}
+                />
+              </p>
+              <p className="drivers-name">
+                <div dangerouslySetInnerHTML={createMarkup(firstCard.name)} />
+              </p>
             </div>
           </div>
         </div>
@@ -25,8 +35,14 @@ const DriversReviews = () => (
           <div className="img-box" />
           <div className="text-box">
             <div className="inner-text-box">
-              <p>{secondCard.description}</p>
-              <p className="drivers-name">{secondCard.name}</p>
+              <p>
+                <div
+                  dangerouslySetInnerHTML={createMarkup(secondCard.description)}
+                />
+              </p>
+              <p className="drivers-name">
+                <div dangerouslySetInnerHTML={createMarkup(secondCard.name)} />
+              </p>
             </div>
           </div>
         </div>
@@ -35,8 +51,14 @@ const DriversReviews = () => (
           <div className="img-box" />
           <div className="text-box">
             <div className="inner-text-box">
-              <p>{thirdCard.description}</p>
-              <p className="drivers-name">{thirdCard.name}</p>
+              <p>
+                <div
+                  dangerouslySetInnerHTML={createMarkup(thirdCard.description)}
+                />
+              </p>
+              <p className="drivers-name">
+                <div dangerouslySetInnerHTML={createMarkup(thirdCard.name)} />
+              </p>
             </div>
           </div>
         </div>

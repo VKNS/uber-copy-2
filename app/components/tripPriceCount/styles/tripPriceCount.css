@@ -16,7 +16,6 @@
   width: 100%;
   height: 230px;
   background-color: #ffffff;
-  /*z-index: 1;*/
 }
 
 .innerform {
@@ -162,7 +161,7 @@
 
 @media screen and (min-width: 1025px) {
   .trip-price-count {
-    padding: 20px 6.6vw 50px 6.6vw;
+    padding: 20px 60px 50px 60px;
   }
 
   .mapPic {

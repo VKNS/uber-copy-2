@@ -86,7 +86,7 @@
 
 @media screen and (min-width: 769px) {
   .inner-search-form {
-    padding: 20px 6.6vw 40px 6.6vw;
+    padding: 20px 100px 40px 100px;
   }
 
   .inner-search-form .header-box span {
@@ -100,7 +100,7 @@
 
 @media screen and (min-width: 1025px) {
   .inner-search-form {
-    padding: 50px 12.6vw 40px 12.6vw;
+    padding: 50px 180px 40px 180px;
   }
 
   .search-form .header-box {

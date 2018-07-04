@@ -5,6 +5,10 @@ import globeImg from './images/globe.svg';
 import arrowImg from './images/small-arrow.svg';
 import { news, info } from './text/newsBlock.json';
 
+function createMarkup(val) {
+  return { __html: val };
+}
+
 const NewsBlock = () => (
   <section className="news-block">
     <h2>Будьте в курсе последних новостей компании Uber</h2>
@@ -18,7 +22,9 @@ const NewsBlock = () => (
             <h4>Наши новости</h4>
           </div>
           <div className="text-box ">
-            <p>{news}</p>
+            <p>
+              <div dangerouslySetInnerHTML={createMarkup(news)} />
+            </p>
           </div>
           <div className="btn-more">
             <span>подробнее</span>
@@ -38,7 +44,9 @@ const NewsBlock = () => (
             <h4>Информация о компании</h4>
           </div>
           <div className="text-box">
-            <p>{info}</p>
+            <p>
+              <div dangerouslySetInnerHTML={createMarkup(info)} />
+            </p>
           </div>
           <div className="btn-more">
             <span>подробнее</span>
