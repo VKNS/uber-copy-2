@@ -10,8 +10,8 @@ import InstagrImg from './images/instagram-icon.svg';
 
 const SocialLinks = () => (
   <div className="social-links">
-    <div className="column">
-      <span className="link">
+    <div className="soc-column">
+      <span className="soc-link">
         <a href="/">
           <span className="icon">
             <img src={LocImg} alt="" />
@@ -20,8 +20,9 @@ const SocialLinks = () => (
         </a>
       </span>
     </div>
-    <div className="column">
-      <span className="link">
+
+    <div className="soc-column">
+      <span className="soc-link">
         <a href="/">
           <span className="icon">
             <img src={LangImg} alt="" />
@@ -30,8 +31,9 @@ const SocialLinks = () => (
         </a>
       </span>
     </div>
-    <div className="column">
-      <span className="link">
+
+    <div className="soc-column">
+      <span className="soc-link">
         <a href="/">
           <span className="icon">
             <img src={HelpImg} alt="" />
@@ -40,18 +42,19 @@ const SocialLinks = () => (
         </a>
       </span>
     </div>
-    <div className="column mass-icons">
-      <span className="icon link">
+
+    <div className="soc-column mass-icons">
+      <span className="icon soc-link">
         <a href="/">
           <img src={FBImg} alt="" />
         </a>
       </span>
-      <span className="icon link">
+      <span className="icon soc-link">
         <a href="/">
           <img src={TwitImg} alt="" />
         </a>
       </span>
-      <span className="icon link">
+      <span className="icon soc-link">
         <a href="/">
           <img src={InImg} alt="" />
         </a>

@@ -6,3 +6,17 @@
 .inner-info-links {
   padding: 35px 24px 45px 24px;
 }
+
+/*......................SIZING...............................*/
+
+@media screen and (min-width: 769px) {
+  .inner-info-links {
+    padding: 70px 9.6vw 40px 9.6vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /*.inner-info-links {
+    padding: 50px 12.6vw 40px 12.6vw;
+  }*/
+}

@@ -1,33 +1,36 @@
 /*SOCIAL LINKS*/
 
 /*...................POSITIONING.......................*/
+.social-links {
+  /*padding-bottom: 20px;*/
+}
 
-.social-links .column {
+.social-links .soc-column {
   height: 50px;
   width: 100%;
   border-top: #282727 solid 1px;
   border-bottom: #282727 solid 1px;
 }
 
-.social-links .link {
+.social-links .soc-link {
   display: inline-block;
   padding-top: 10px;
   height: 30px;
 }
 
-.link .icon {
+.soc-link .icon {
   display: inline-block;
   padding-right: 15px;
   padding-top: 2px;
   /*height: 16px;*/
 }
 
-.link .icon img {
+.soc-link .icon img {
   vertical-align: top;
   /*padding-top: 0px;*/
 }
 
-.link .description {
+.soc-link .description {
   vertical-align: top;
 }
 
@@ -41,12 +44,28 @@
 
 /***************TEXT*****************/
 
-.link a {
+.soc-link a {
   color: #ffffff;
   text-decoration: none;
   font-size: 0.93em;
 }
 
-.link .lang-link {
+.soc-link .lang-link {
   text-transform: uppercase;
+}
+
+/*......................SIZING...............................*/
+
+@media screen and (min-width: 769px) {
+  .social-links .soc-column {
+    border: none;
+  }
+
+  .mass-icons {
+    padding-top: 415px;
+  }
+
+  .mass-icons .icon {
+    padding-right: 13px;
+  }
 }
