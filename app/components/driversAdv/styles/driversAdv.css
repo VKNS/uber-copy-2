@@ -1,8 +1,7 @@
 .drivers-advantages {
-  background-image: url(https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/76830279-22dd-4a34-8150-004f75a3afd9/desk.jpg);
-  background-repeat: no-repeat;
+  background: url(https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/76830279-22dd-4a34-8150-004f75a3afd9/desk.jpg)
+    center no-repeat;
   background-size: cover;
-  background-position: center;
   height: 420px;
 }
 

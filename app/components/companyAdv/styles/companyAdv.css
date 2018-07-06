@@ -1,9 +1,9 @@
 /*************BLOCKS-POSITIONING etc*******************/
 
 .company-adv .img-box {
-  background-image: url(https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/4878ffeb-2036-485f-b274-73f0f36e3a71/palm.jpg);
+  background: url(https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/4878ffeb-2036-485f-b274-73f0f36e3a71/palm.jpg)
+    center;
   background-size: cover;
-  background-position: center;
   width: 100%;
   height: 300px;
 }

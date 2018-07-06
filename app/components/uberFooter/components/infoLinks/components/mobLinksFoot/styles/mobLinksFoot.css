@@ -27,7 +27,6 @@
 
 .copyright {
   display: inline-block;
-
   vertical-align: top;
 }
 
@@ -130,11 +129,4 @@
     padding-right: 4px;
     flex: 1;
   }
-  /*-----------------------------------------*/
-}
-
-@media screen and (min-width: 1025px) {
-  /*.inner-info-links {
-    padding: 50px 12.6vw 40px 12.6vw;
-  }*/
 }

@@ -19,8 +19,7 @@
 
 .clients-adv,
 .row-3 {
-  padding-left: 14px;
-  padding-right: 14px;
+  padding: 0px 14px;
   word-spacing: -0.8px;
   letter-spacing: -0.4px;
   flex: 1;
@@ -42,13 +41,11 @@
 }
 
 .row-4 {
-  padding-left: 14px;
-  padding-bottom: 45px;
-  padding-top: 20px;
+  padding: 20px 0px 45px 14px;
 }
 
 .clients-adv .advantages-link {
-  background-color: black;
+  background: black;
   height: 40px;
   width: 300px;
   text-align: center;
@@ -97,9 +94,6 @@
 }
 
 /*..............SIZING......................*/
-
-@media screen and (min-width: 769px) {
-}
 
 @media screen and (min-width: 769px) {
   .clients-adv {

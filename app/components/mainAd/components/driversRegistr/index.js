@@ -4,6 +4,10 @@ import arrowImg from './images/small-arrow.svg';
 import blackArrowImg from './images/black-arrow.svg';
 import { licenseAgreement } from './text/driversRegistr.json';
 
+function createMarkup(val) {
+  return { __html: val };
+}
+
 const DriversRegistr = () => (
   <div className="form-from1024">
     <div className="inner-form-from1024">
@@ -68,7 +72,7 @@ const DriversRegistr = () => (
                 Или <a href="/">зарегистрируйтесь</a> с помощью аккаунта
                 пользователя.
               </div>
-              <p>{licenseAgreement}</p>
+              <p dangerouslySetInnerHTML={createMarkup(licenseAgreement)} />
               <a id="license-link" href="/">
                 Заявление о конфеденциальности водителя-партнера Uber
               </a>

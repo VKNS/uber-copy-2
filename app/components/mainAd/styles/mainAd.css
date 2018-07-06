@@ -26,9 +26,7 @@
   left: 60%;
   bottom: 135px;
   z-index: 1;
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 15px 15px 0px 15px;
 }
 
 .plz-use {

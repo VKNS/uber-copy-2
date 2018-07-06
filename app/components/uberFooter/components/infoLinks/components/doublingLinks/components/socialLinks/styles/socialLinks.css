@@ -1,10 +1,6 @@
 /*SOCIAL LINKS*/
 
 /*...................POSITIONING.......................*/
-.social-links {
-  /*padding-bottom: 20px;*/
-}
-
 .social-links .soc-column {
   height: 50px;
   width: 100%;
@@ -22,12 +18,10 @@
   display: inline-block;
   padding-right: 15px;
   padding-top: 2px;
-  /*height: 16px;*/
 }
 
 .soc-link .icon img {
   vertical-align: top;
-  /*padding-top: 0px;*/
 }
 
 .soc-link .description {

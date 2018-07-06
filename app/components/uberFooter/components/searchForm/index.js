@@ -8,8 +8,8 @@ const SearchForm = () => (
     <div className="inner-search-form">
       <div className="header-box">
         <h3>
-          <span>Uber доступен в Сан-Франциско</span>
-          <span>и еще 632 городах по всему миру</span>
+          <div className="header3">Uber доступен в Сан-Франциско</div>
+          <div className="header3">и еще 632 городах по всему миру</div>
         </h3>
       </div>
       <div className="input-box">
