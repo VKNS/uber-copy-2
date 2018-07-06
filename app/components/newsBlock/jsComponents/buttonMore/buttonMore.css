@@ -1,0 +1,50 @@
+/*....................button-more.........................*/
+
+.news-block .btn-more {
+  width: 140px;
+}
+
+.news-block .btn-more span {
+  vertical-align: top;
+}
+
+.news-block .btn-more .arrow {
+  display: inline-block;
+  padding-left: 8px;
+  padding-top: 2.5px;
+}
+
+.news-block .btn-more img {
+  vertical-align: top;
+}
+
+.news-block .btn-more {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: -0.2px;
+}
+
+.news-block .btn-more span {
+  transition: all 400ms ease;
+}
+
+.news-block .btn-more .arrow {
+  transition: all 400ms ease;
+}
+
+.news-block .btn-more:hover {
+  opacity: 0.5;
+}
+
+.news-block .btn-more:hover .arrow {
+  transform: translateX(2.5px);
+}
+
+.news-block .btn-more span {
+  font-weight: 700;
+}
+
+.news-block .btn-more .arrow {
+  padding-top: 7.3px;
+}

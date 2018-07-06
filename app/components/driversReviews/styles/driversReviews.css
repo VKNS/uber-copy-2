@@ -5,9 +5,7 @@
 }
 
 .inner-drivers-rev {
-  padding-top: 30px;
-  padding-left: 24px;
-  padding-right: 34px;
+  padding: 30px 34px 0px 24px;
 }
 
 .header-box {
@@ -143,7 +141,7 @@ p {
   }
 
   .inner-drivers-rev {
-    padding: 120px 100px 40px 100px;
+    padding: 40px 100px 40px 100px;
   }
 }
 
@@ -153,6 +151,6 @@ p {
   }
 
   .inner-drivers-rev {
-    padding: 180px 170px 40px 180px;
+    padding: 60px 180px 40px 180px;
   }
 }

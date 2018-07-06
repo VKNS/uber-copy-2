@@ -6,7 +6,11 @@ import arrowImg from './images/arrow.svg';
 
 const TripPriceCount = () => (
   <section className="trip-price-count">
-    <div className="mapPic" />
+    <img
+      className="mapPic"
+      src="https://d1a3f4spazzrp4.cloudfront.net/uber-com/1.3.8/d1a3f4spazzrp4.cloudfront.net/images/fare-estimate/mobile-fare-estimate-map-d7bf04aff9.jpg"
+      alt=""
+    />
 
     <div className="outer-trip-price-form">
       <div className="trip-price-form">

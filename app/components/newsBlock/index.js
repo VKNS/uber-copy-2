@@ -2,60 +2,34 @@ import React from 'react';
 import './styles/newsBlock.css';
 import speakerImg from './images/speaker.svg';
 import globeImg from './images/globe.svg';
-import arrowImg from './images/small-arrow.svg';
-import { news, info } from './text/newsBlock.json';
+import LesserBlock from './jsComponents/lesserBlock';
+import Text from './text/newsBlock.json';
 
-function createMarkup(val) {
-  return { __html: val };
-}
+const State = {};
+const colNums = ['column-1', 'column-2'];
+const imgList = [speakerImg, globeImg];
+
+let i = 0;
+Object.keys(Text).forEach(element => {
+  State[element] = {};
+  State[element].text = Text[element];
+  State[element].img = imgList[i];
+  State[element].colNum = colNums[i];
+  i += 1;
+});
 
 const NewsBlock = () => (
   <section className="news-block">
     <h2>Будьте в курсе последних новостей компании Uber</h2>
     <div className="flex-box">
-      <div className="row-7 column-1">
-        <div className="imgBox">
-          <img src={speakerImg} alt="" />
-        </div>
-        <div className="outer-text-box">
-          <div className="heading">
-            <h4>Наши новости</h4>
-          </div>
-          <div className="text-box ">
-            <p>
-              <div dangerouslySetInnerHTML={createMarkup(news)} />
-            </p>
-          </div>
-          <div className="btn-more">
-            <span>подробнее</span>
-            <span className="arrow">
-              <img src={arrowImg} alt="" />
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div className="row-7 column-2">
-        <div className="imgBox">
-          <img src={globeImg} alt="" />
-        </div>
-        <div className="outer-text-box">
-          <div className="heading">
-            <h4>Информация о компании</h4>
-          </div>
-          <div className="text-box">
-            <p>
-              <div dangerouslySetInnerHTML={createMarkup(info)} />
-            </p>
-          </div>
-          <div className="btn-more">
-            <span>подробнее</span>
-            <span className="arrow">
-              <img src={arrowImg} alt="" />
-            </span>
-          </div>
-        </div>
-      </div>
+      {Object.values(State).map(block => (
+        <LesserBlock
+          colNum={block.colNum}
+          img={block.img}
+          title={block.text.title}
+          description={block.text.description}
+        />
+      ))}
     </div>
   </section>
 );

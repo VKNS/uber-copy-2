@@ -8,62 +8,38 @@ import TwitImg from './images/twitter-icon.svg';
 import InImg from './images/in-icon.svg';
 import InstagrImg from './images/instagram-icon.svg';
 
+import LinkDesc from './jscomponents/linkDesc';
+import LinkIcon from './jscomponents/linkIcon';
+
+const State = {
+  withDescription: {
+    first: ['', LocImg, 'location', 'Введите Местоположение'],
+    second: ['', LangImg, 'lang-link', 'русский'],
+    third: ['', HelpImg, 'help', 'Помощь'],
+  },
+  withoutDescription: {
+    first: ['', FBImg],
+    second: ['', TwitImg],
+    third: ['', InImg],
+    fourth: ['', InstagrImg],
+  },
+};
+
 const SocialLinks = () => (
   <div className="social-links">
-    <div className="soc-column">
-      <span className="soc-link">
-        <a href="/">
-          <span className="icon">
-            <img src={LocImg} alt="" />
-          </span>
-          <span className="description">Введите Местоположение</span>
-        </a>
-      </span>
-    </div>
-
-    <div className="soc-column">
-      <span className="soc-link">
-        <a href="/">
-          <span className="icon">
-            <img src={LangImg} alt="" />
-          </span>
-          <span className="description lang-link">русский</span>
-        </a>
-      </span>
-    </div>
-
-    <div className="soc-column">
-      <span className="soc-link">
-        <a href="/">
-          <span className="icon">
-            <img src={HelpImg} alt="" />
-          </span>
-          <span className="description">Помощь</span>
-        </a>
-      </span>
-    </div>
+    {Object.values(State.withDescription).map(obj => (
+      <LinkDesc
+        link={obj[0]}
+        img={obj[1]}
+        descClass={obj[2]}
+        description={obj[3]}
+      />
+    ))}
 
     <div className="soc-column mass-icons">
-      <span className="icon soc-link">
-        <a href="/">
-          <img src={FBImg} alt="" />
-        </a>
-      </span>
-      <span className="icon soc-link">
-        <a href="/">
-          <img src={TwitImg} alt="" />
-        </a>
-      </span>
-      <span className="icon soc-link">
-        <a href="/">
-          <img src={InImg} alt="" />
-        </a>
-      </span>
-      <span className="icon">
-        <a href="/">
-          <img src={InstagrImg} alt="" />
-        </a>
-      </span>
+      {Object.values(State.withoutDescription).map(obj => (
+        <LinkIcon link={obj[0]} img={obj[1]} />
+      ))}
     </div>
   </div>
 );

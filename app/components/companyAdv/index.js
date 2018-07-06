@@ -18,9 +18,7 @@ const CompanyAdv = () => (
             <h2>Uber для бизнеса</h2>
           </div>
           <div className="description">
-            <p>
-              <div dangerouslySetInnerHTML={createMarkup(compAdv)} />
-            </p>
+            <p dangerouslySetInnerHTML={createMarkup(compAdv)} />
           </div>
           <div className="btn-more">
             <span>подробнее</span>
