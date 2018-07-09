@@ -9,9 +9,14 @@ import pigImg from './images/piggy-bank.svg';
 
 import arrowImg from './images/arrow.svg';
 import advText from './text/advantages.json';
+/*
+переделай его в чистый массив объектов без ключей [{}, {}, {}] и в render сделай по нему map
+без всяких Object.keys
+и сделай чтобы этот массив приходил про props из родительского компонента, чтобы было ближе к реальности
+*/
 
-let imgList = [womanImg, carImg, pigImg];
-let State = {};
+const imgList = [womanImg, carImg, pigImg];
+const State = [];
 
 let i = 0;
 Object.keys(advText).forEach(element => {

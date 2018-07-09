@@ -1,10 +1,12 @@
 import React from 'react';
+/* import { Carousel } from 'react-responsive-carousel';
+*/
 import './styles/driversReviews.css';
 import Card from './jsComponents/card';
 import arrowImg from './images/arrow.svg';
 import CardList from './text/driversReviews.json';
 
-let State = {};
+const State = {};
 Object.keys(CardList).forEach(element => {
   State[element] = {};
   State[element].text = CardList[element];
