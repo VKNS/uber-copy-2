@@ -1,17 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-/*
-const base = require('path');
-*/
-const SVG = props => {
-  const { path, alt = '' } = props;
-  return <img src={`images/${path}`} alt={alt} />;
-  /*return <img src={base.resolve(__dirname, path)} alt={alt} />;*/
-};
 
+const SVG = props => {
+  const { pic } = props;
+
+  return <img src={require(`../../../images/${pic.img}`)} alt={pic.alt} />;
+};
 SVG.propTypes = {
-  path: PropTypes.string.isRequired,
-  alt: PropTypes.string,
+  pic: PropTypes.object.isRequired,
 };
 
 export default SVG;

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import SVG from '../../commonlyUsedComponents/SVG';
 
 const Button = props => {
   const { pic } = props;
@@ -7,14 +8,14 @@ const Button = props => {
     <div className="button advantages-link">
       <div className="link">преимущества поездок с uber</div>
       <div className="arrow">
-        <img src={pic} alt="arr" />
+        <SVG pic={pic} />
       </div>
     </div>
   );
 };
 
 Button.propTypes = {
-  pic: PropTypes.string.isRequired,
+  pic: PropTypes.object.isRequired,
 };
 
 export default Button;

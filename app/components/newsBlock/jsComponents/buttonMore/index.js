@@ -1,14 +1,21 @@
 import React from 'react';
-import arrowImg from './small-arrow.svg';
+import PropTypes from 'prop-types';
+import SVG from '../../../commonlyUsedComponents/SVG';
+
 import './buttonMore.css';
 
-const ButtonMore = () => (
-  <div className="btn-more">
-    <span>подробнее</span>
-    <span className="arrow">
-      <img src={arrowImg} alt="" />
-    </span>
-  </div>
-);
-
+const ButtonMore = props => {
+  const { content } = props;
+  return (
+    <div className="btn-more">
+      <span>подробнее</span>
+      <span className="arrow">
+        <SVG pic={content} />
+      </span>
+    </div>
+  );
+};
+ButtonMore.propTypes = {
+  content: PropTypes.object.isRequired,
+};
 export default ButtonMore;

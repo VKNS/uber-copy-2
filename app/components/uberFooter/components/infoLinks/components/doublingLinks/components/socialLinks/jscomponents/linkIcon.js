@@ -1,21 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import SVG from '../../../../../../../../commonlyUsedComponents/SVG';
 
 const LinkIcon = props => {
-  const { link, img } = props;
-
+  const { content } = props;
   return (
     <span className="icon soc-link">
-      <a href={link}>
-        <img src={img} alt="" />
+      <a href={content.link}>
+        <SVG pic={content.image} />
       </a>
     </span>
   );
 };
 
 LinkIcon.propTypes = {
-  link: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
+  content: PropTypes.object.isRequired,
 };
 
 export default LinkIcon;

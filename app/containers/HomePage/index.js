@@ -21,21 +21,20 @@ import NewsBlock from 'components/newsBlock';
 import UberFooter from 'components/uberFooter';
 import './styles/homePage.css';
 
-/* eslint-disable react/prefer-stateless-function */
-export default class HomePage extends React.PureComponent {
-  render() {
-    return (
-      <div className="container">
-        <Header />
-        <MainAd />
-        <ClientAdv />
-        <TripPriceCount />
-        <DriversAdv />
-        <DriversReviews />
-        <CompanyAdv />
-        <NewsBlock />
-        <UberFooter />
-      </div>
-    );
-  }
-}
+import PageContent from './componentContent/homePageContent.json';
+
+const HomePage = () => (
+  <div className="container">
+    <Header content={PageContent.header} />
+    <MainAd content={PageContent.mainAd} />
+    <ClientAdv content={PageContent.clientAdv} />
+    <TripPriceCount content={PageContent.tripPriceCount} />
+    <DriversAdv content={PageContent.driversAdv} />
+    <DriversReviews content={PageContent.driversReviews} />
+    <CompanyAdv content={PageContent.companyAdv} />
+    <NewsBlock content={PageContent.newsBlock} />
+    <UberFooter content={PageContent.uberFooter} />
+  </div>
+);
+
+export default HomePage;

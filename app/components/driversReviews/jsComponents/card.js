@@ -1,22 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-function createMarkup(val) {
-  return { __html: val };
-}
+import createMarkup from '../../commonlyUsedComponents/createMarkup';
 
 const Card = props => {
-  const { cardNum, description, name } = props;
+  const { content } = props;
 
   return (
-    <div className={`card ${cardNum}`}>
+    <div className={`card ${content.cardNum}`}>
       <div className="img-box" />
       <div className="text-box">
         <div className="inner-text-box">
-          <p dangerouslySetInnerHTML={createMarkup(description)} />
+          <p dangerouslySetInnerHTML={createMarkup(content.description)} />
           <p
             className="drivers-name"
-            dangerouslySetInnerHTML={createMarkup(name)}
+            dangerouslySetInnerHTML={createMarkup(content.name)}
           />
         </div>
       </div>
@@ -25,8 +22,6 @@ const Card = props => {
 };
 
 Card.propTypes = {
-  cardNum: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
+  content: PropTypes.object.isRequired,
 };
 export default Card;
