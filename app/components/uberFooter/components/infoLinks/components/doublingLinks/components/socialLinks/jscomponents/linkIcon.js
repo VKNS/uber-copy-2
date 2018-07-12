@@ -1,17 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SVG from '../../../../../../../../commonlyUsedComponents/SVG';
+import SVG from 'components/commonlyUsedComponents/SVG/svg';
 
-const LinkIcon = props => {
-  const { content } = props;
-  return (
-    <span className="icon soc-link">
-      <a href={content.link}>
-        <SVG pic={content.image} />
-      </a>
-    </span>
-  );
-};
+const LinkIcon = ({ content }) => (
+  <span className="icon soc-link">
+    <a href={content.link}>
+      <SVG pic={content.image} />
+    </a>
+  </span>
+);
 
 LinkIcon.propTypes = {
   content: PropTypes.object.isRequired,
