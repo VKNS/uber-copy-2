@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const SVG = props => {
-  const { pic } = props;
+const SVG = ({ pic: { img, alt } }) => (
+  <img src={require(`images/${img}`)} alt={alt} />
+);
 
-  return <img src={require(`../../../images/${pic.img}`)} alt={pic.alt} />;
-};
 SVG.propTypes = {
   pic: PropTypes.object.isRequired,
 };
