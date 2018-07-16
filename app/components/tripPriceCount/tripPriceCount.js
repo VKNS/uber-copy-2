@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import SVG from '../commonlyUsedComponents/SVG/svg';
 import './styles/tripPriceCount.css';
 
+import MyGoogleMap from './components/googleMap';
+
 const TripPriceCount = ({ content }) => (
   <section className="trip-price-count">
     <img className="mapPic" src={content.image1.img} alt={content.image1.alt} />
@@ -36,14 +38,21 @@ const TripPriceCount = ({ content }) => (
             </div>
           </div>
         </div>
-        <div className="real-google-map" />
+        <div className="real-google-map">
+          <MyGoogleMap
+            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2UxlqPVCgiNVs1KOpu_LyMTIfMd7VdRg&v=3.exp&libraries=geometry,drawing,places"
+            loadingElement={<div style={{ height: `100%` }} />}
+            containerElement={<div style={{ height: `400px` }} />}
+            mapElement={<div style={{ height: `100%` }} />}
+          />
+        </div>
       </div>
     </div>
   </section>
 );
 
 TripPriceCount.propTypes = {
-  content: PropTypes.array.isRequired,
+  content: PropTypes.object.isRequired,
 };
 
 export default TripPriceCount;

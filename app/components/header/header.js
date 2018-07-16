@@ -59,7 +59,7 @@ const Header = ({ content }) => (
 );
 
 Header.propTypes = {
-  content: PropTypes.array.isRequired,
+  content: PropTypes.object.isRequired,
 };
 
 export default Header;
