@@ -5,9 +5,15 @@ import './styles/tripPriceCount.css';
 
 import MyGoogleMap from './components/googleMap';
 
-const TripPriceCount = ({ content }) => (
+const TripPriceCount = ({
+  content: {
+    image1: { img, alt },
+    image2,
+    image3,
+  },
+}) => (
   <section className="trip-price-count">
-    <img className="mapPic" src={content.image1.img} alt={content.image1.alt} />
+    <img className="mapPic" src={img} alt={alt} />
 
     <div className="outer-trip-price-form">
       <div className="trip-price-form">
@@ -24,7 +30,7 @@ const TripPriceCount = ({ content }) => (
                 <input type="text" placeholder="Введите место отправления" />
               </div>
               <div className="row btn plane">
-                <SVG pic={content.image2} />
+                <SVG pic={image2} />
               </div>
             </div>
 
@@ -33,7 +39,7 @@ const TripPriceCount = ({ content }) => (
                 <input type="text" placeholder="Введите пункт назначения" />
               </div>
               <div className="row btn arrow">
-                <SVG pic={content.image3} />
+                <SVG pic={image3} />
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@ import DriversRegistr from './components/driversRegistr/driversRegistr';
 
 import SVG from '../commonlyUsedComponents/SVG/svg';
 
-const MainAd = ({ content }) => (
+const MainAd = ({ content: { image, driversRegistr } }) => (
   <section className="main-advantages">
     <div className="catchphrase">
       <h1 className="main-phrase">В путь с Uber </h1>
@@ -17,10 +17,10 @@ const MainAd = ({ content }) => (
       <div className="column-1 plz-use ">Начните пользоваться Uber</div>
       <div className="column-1 plz-download ">скачать приложение</div>
       <div className="column-1 arrow ">
-        <SVG pic={content.image} />
+        <SVG pic={image} />
       </div>
     </div>
-    <DriversRegistr content={content.driversRegistr} />
+    <DriversRegistr content={driversRegistr} />
   </section>
 );
 

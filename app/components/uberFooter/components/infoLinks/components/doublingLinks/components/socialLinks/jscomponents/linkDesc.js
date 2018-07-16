@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 import createMarkup from 'components/commonlyUsedComponents/createMarkup/createMarkup';
 import SVG from 'components/commonlyUsedComponents/SVG/svg';
 
-const LinkDesc = ({ content }) => (
+const LinkDesc = ({ content: { link, image, descClass, description } }) => (
   <div className="soc-column">
     <span className="soc-link">
-      <a href={content.link}>
+      <a href={link}>
         <span className="icon">
-          <SVG pic={content.image} />
+          <SVG pic={image} />
         </span>
         <span
-          className={`description ${content.descClass}`}
-          dangerouslySetInnerHTML={createMarkup(content.description)}
+          className={`description ${descClass}`}
+          dangerouslySetInnerHTML={createMarkup(description)}
         />
       </a>
     </span>

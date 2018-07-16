@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import SVG from 'components/commonlyUsedComponents/SVG/svg';
 import './styles/searchForm.css';
 
-const SearchForm = ({ content }) => (
+const SearchForm = ({ content: { image1, image2 } }) => (
   <section className="search-form">
     <div className="inner-search-form">
       <div className="header-box">
@@ -17,12 +17,12 @@ const SearchForm = ({ content }) => (
           <input placeholder="Найти город" />
         </div>
         <div className="row btn-search">
-          <SVG pic={content.image1} />
+          <SVG pic={image1} />
         </div>
       </div>
     </div>
     <div className="img-box">
-      <SVG pic={content.image2} />
+      <SVG pic={image2} />
     </div>
   </section>
 );

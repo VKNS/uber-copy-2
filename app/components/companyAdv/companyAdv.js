@@ -4,7 +4,7 @@ import SVG from '../commonlyUsedComponents/SVG/svg';
 import './styles/companyAdv.css';
 import createMarkup from '../commonlyUsedComponents/createMarkup/createMarkup';
 
-const CompanyAdv = ({ content }) => (
+const CompanyAdv = ({ content: { description, image } }) => (
   <section className="company-adv">
     <div className="from-1025">
       <div className="flex-box">
@@ -15,12 +15,12 @@ const CompanyAdv = ({ content }) => (
             <h2>Uber для бизнеса</h2>
           </div>
           <div className="description">
-            <p dangerouslySetInnerHTML={createMarkup(content.description)} />
+            <p dangerouslySetInnerHTML={createMarkup(description)} />
           </div>
           <div className="btn-more">
             <span>подробнее</span>
             <span className="arrow">
-              <SVG pic={content.image} />
+              <SVG pic={image} />
             </span>
           </div>
         </div>

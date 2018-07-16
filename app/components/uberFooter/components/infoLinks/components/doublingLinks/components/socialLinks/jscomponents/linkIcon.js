@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import SVG from 'components/commonlyUsedComponents/SVG/svg';
 
-const LinkIcon = ({ content }) => (
+const LinkIcon = ({ content: { link, image } }) => (
   <span className="icon soc-link">
-    <a href={content.link}>
-      <SVG pic={content.image} />
+    <a href={link}>
+      <SVG pic={image} />
     </a>
   </span>
 );

@@ -4,7 +4,9 @@ import SVG from 'components/commonlyUsedComponents/SVG/svg';
 import createMarkup from 'components/commonlyUsedComponents/createMarkup/createMarkup';
 import './styles/driversRegistr.css';
 
-const DriversRegistr = ({ content }) => (
+const DriversRegistr = ({
+  content: { imageBlackArrow, imageSmallArrow, licenseAgreement },
+}) => (
   <div className="form-from1024">
     <div className="inner-form-from1024">
       <div className="form-wrapper">
@@ -16,7 +18,7 @@ const DriversRegistr = ({ content }) => (
               <a href="/">
                 регистрация
                 <span>
-                  <SVG pic={content.imageBlackArrow} />
+                  <SVG pic={imageBlackArrow} />
                 </span>
               </a>
             </div>
@@ -59,7 +61,7 @@ const DriversRegistr = ({ content }) => (
               <div className="inner-btn-register">
                 <span className="text">зарегистрироваться</span>
                 <span className="img-box">
-                  <SVG pic={content.imageSmallArrow} />
+                  <SVG pic={imageSmallArrow} />
                 </span>
               </div>
             </div>
@@ -68,9 +70,7 @@ const DriversRegistr = ({ content }) => (
                 Или <a href="/">зарегистрируйтесь</a> с помощью аккаунта
                 пользователя.
               </div>
-              <p
-                dangerouslySetInnerHTML={createMarkup(content.licenseAgreement)}
-              />
+              <p dangerouslySetInnerHTML={createMarkup(licenseAgreement)} />
               <a id="license-link" href="/">
                 Заявление о конфеденциальности водителя-партнера Uber
               </a>
