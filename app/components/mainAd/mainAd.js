@@ -1,9 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './styles/mainAd.css';
-import DriversRegistr from './components/driversRegistr';
-import arrowImg from './images/arrow.svg';
+import DriversRegistr from './components/driversRegistr/driversRegistr';
 
-const MainAd = () => (
+import SVG from '../commonlyUsedComponents/SVG/svg';
+
+const MainAd = ({ content }) => (
   <section className="main-advantages">
     <div className="catchphrase">
       <h1 className="main-phrase">В путь с Uber </h1>
@@ -15,11 +17,15 @@ const MainAd = () => (
       <div className="column-1 plz-use ">Начните пользоваться Uber</div>
       <div className="column-1 plz-download ">скачать приложение</div>
       <div className="column-1 arrow ">
-        <img src={arrowImg} alt="arr" />
+        <SVG pic={content.image} />
       </div>
     </div>
-    <DriversRegistr />
+    <DriversRegistr content={content.driversRegistr} />
   </section>
 );
+
+MainAd.propTypes = {
+  content: PropTypes.object.isRequired,
+};
 
 export default MainAd;

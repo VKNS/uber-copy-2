@@ -1,36 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ButtonMore from './buttonMore';
+import SVG from 'components/commonlyUsedComponents/SVG/svg';
+import createMarkup from 'components/commonlyUsedComponents/createMarkup/createMarkup';
+import ButtonMore from './buttonMore/buttonMore';
 
-function createMarkup(val) {
-  return { __html: val };
-}
-
-const LesserBlock = props => {
-  const { colNum, img, title, description } = props;
-
-  return (
-    <div className={`row-7 ${colNum}`}>
-      <div className="imgBox">
-        <img src={img} alt="" />
-      </div>
-      <div className="outer-text-box">
-        <div className="heading">
-          <h4 dangerouslySetInnerHTML={createMarkup(title)} />
-        </div>
-        <div className="text-box ">
-          <p dangerouslySetInnerHTML={createMarkup(description)} />
-        </div>
-        <ButtonMore />
-      </div>
+const LesserBlock = ({ content }) => (
+  <div className={`row-7 ${content.colNum}`}>
+    <div className="imgBox">
+      <SVG pic={content.image} />
     </div>
-  );
-};
+    <div className="outer-text-box">
+      <div className="heading">
+        <h4 dangerouslySetInnerHTML={createMarkup(content.title)} />
+      </div>
+      <div className="text-box ">
+        <p dangerouslySetInnerHTML={createMarkup(content.description)} />
+      </div>
+      <ButtonMore content={content.buttonPic} />
+    </div>
+  </div>
+);
 
 LesserBlock.propTypes = {
-  colNum: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  content: PropTypes.object.isRequired,
 };
+
 export default LesserBlock;

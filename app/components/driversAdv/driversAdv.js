@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import SVG from '../commonlyUsedComponents/SVG/svg';
 import './styles/driversAdv.css';
-import arrowImg from './images/arrow.svg';
 
-const DriversAdv = () => (
+const DriversAdv = ({ content }) => (
   <section className="drivers-advantages">
     <div className="inner-box">
       <div className="header">График выбираете вы</div>
@@ -19,7 +20,7 @@ const DriversAdv = () => (
         <div className="drivers-link">
           преимущества работы водителем-партнером uber
           <span className="arrow-box">
-            <img src={arrowImg} alt="arr" />
+            <SVG pic={content.image} />
           </span>
         </div>
       </div>
@@ -27,4 +28,7 @@ const DriversAdv = () => (
   </section>
 );
 
+DriversAdv.propTypes = {
+  content: PropTypes.object.isRequired,
+};
 export default DriversAdv;

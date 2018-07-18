@@ -1,35 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import createMarkup from 'components/commonlyUsedComponents/createMarkup/createMarkup';
+import SVG from 'components/commonlyUsedComponents/SVG/svg';
 
-function createMarkup(val) {
-  return { __html: val };
-}
-
-const LinkDesc = props => {
-  const { link, img, descClass, description } = props;
-
-  return (
-    <div className="soc-column">
-      <span className="soc-link">
-        <a href={link}>
-          <span className="icon">
-            <img src={img} alt="" />
-          </span>
-          <span
-            className={`description ${descClass}`}
-            dangerouslySetInnerHTML={createMarkup(description)}
-          />
-        </a>
-      </span>
-    </div>
-  );
-};
+const LinkDesc = ({ content }) => (
+  <div className="soc-column">
+    <span className="soc-link">
+      <a href={content.link}>
+        <span className="icon">
+          <SVG pic={content.image} />
+        </span>
+        <span
+          className={`description ${content.descClass}`}
+          dangerouslySetInnerHTML={createMarkup(content.description)}
+        />
+      </a>
+    </span>
+  </div>
+);
 
 LinkDesc.propTypes = {
-  link: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
-  descClass: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  content: PropTypes.object.isRequired,
 };
 
 export default LinkDesc;

@@ -1,13 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import SVG from '../commonlyUsedComponents/SVG/svg';
 import './styles/companyAdv.css';
-import arrowImg from './images/small-arrow.svg';
-import { compAdv } from './text/companyAdv.json';
+import createMarkup from '../commonlyUsedComponents/createMarkup/createMarkup';
 
-function createMarkup(val) {
-  return { __html: val };
-}
-
-const CompanyAdv = () => (
+const CompanyAdv = ({ content }) => (
   <section className="company-adv">
     <div className="from-1025">
       <div className="flex-box">
@@ -18,12 +15,12 @@ const CompanyAdv = () => (
             <h2>Uber для бизнеса</h2>
           </div>
           <div className="description">
-            <p dangerouslySetInnerHTML={createMarkup(compAdv)} />
+            <p dangerouslySetInnerHTML={createMarkup(content.description)} />
           </div>
           <div className="btn-more">
             <span>подробнее</span>
             <span className="arrow">
-              <img src={arrowImg} alt="" />
+              <SVG pic={content.image} />
             </span>
           </div>
         </div>
@@ -31,5 +28,9 @@ const CompanyAdv = () => (
     </div>
   </section>
 );
+
+CompanyAdv.propTypes = {
+  content: PropTypes.object.isRequired,
+};
 
 export default CompanyAdv;

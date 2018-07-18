@@ -1,14 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './styles/header.css';
-import UbLogo from './images/uber-logo.svg';
-import LocIcon from './images/loc-icon.svg';
 
-const Header = () => (
+import SVG from '../commonlyUsedComponents/SVG/svg';
+
+const Header = ({ content }) => (
   <header>
     <nav>
       <div className="row-1 logo ">
         <a href="/">
-          <img src={UbLogo} alt="UBER" />
+          <SVG pic={content.image1} />
         </a>
       </div>
 
@@ -38,7 +39,7 @@ const Header = () => (
 
       <div className="row-1 location-icon">
         <a href="/">
-          <img src={LocIcon} alt="LOC" />
+          <SVG pic={content.image2} />
         </a>
       </div>
 
@@ -56,5 +57,9 @@ const Header = () => (
     </nav>
   </header>
 );
+
+Header.propTypes = {
+  content: PropTypes.array.isRequired,
+};
 
 export default Header;

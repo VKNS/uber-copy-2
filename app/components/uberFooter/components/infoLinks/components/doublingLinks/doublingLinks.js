@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './styles/doublingLinks.css';
-import SocialLinks from './components/socialLinks';
+import SocialLinks from './components/socialLinks/socialLinks';
 
-const DoublingLinks = () => (
+const DoublingLinks = ({ content }) => (
   <div className="doubling-links">
     <div className="flex flex-1">
-      <SocialLinks />
+      <SocialLinks content={content} />
     </div>
 
     <div className="flex flex-2">
@@ -57,4 +58,7 @@ const DoublingLinks = () => (
   </div>
 );
 
+DoublingLinks.propTypes = {
+  content: PropTypes.object.isRequired,
+};
 export default DoublingLinks;

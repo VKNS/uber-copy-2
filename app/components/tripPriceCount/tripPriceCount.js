@@ -1,16 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import SVG from '../commonlyUsedComponents/SVG/svg';
 import './styles/tripPriceCount.css';
 
-import planeImg from './images/paperplane.svg';
-import arrowImg from './images/arrow.svg';
-
-const TripPriceCount = () => (
+const TripPriceCount = ({ content }) => (
   <section className="trip-price-count">
-    <img
-      className="mapPic"
-      src="https://d1a3f4spazzrp4.cloudfront.net/uber-com/1.3.8/d1a3f4spazzrp4.cloudfront.net/images/fare-estimate/mobile-fare-estimate-map-d7bf04aff9.jpg"
-      alt=""
-    />
+    <img className="mapPic" src={content.image1.img} alt={content.image1.alt} />
 
     <div className="outer-trip-price-form">
       <div className="trip-price-form">
@@ -27,7 +22,7 @@ const TripPriceCount = () => (
                 <input type="text" placeholder="Введите место отправления" />
               </div>
               <div className="row btn plane">
-                <img src={planeImg} alt="" />
+                <SVG pic={content.image2} />
               </div>
             </div>
 
@@ -36,7 +31,7 @@ const TripPriceCount = () => (
                 <input type="text" placeholder="Введите пункт назначения" />
               </div>
               <div className="row btn arrow">
-                <img src={arrowImg} alt="" />
+                <SVG pic={content.image3} />
               </div>
             </div>
           </div>
@@ -46,5 +41,9 @@ const TripPriceCount = () => (
     </div>
   </section>
 );
+
+TripPriceCount.propTypes = {
+  content: PropTypes.array.isRequired,
+};
 
 export default TripPriceCount;

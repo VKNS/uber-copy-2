@@ -1,14 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import SVG from 'components/commonlyUsedComponents/SVG/svg';
+import createMarkup from 'components/commonlyUsedComponents/createMarkup/createMarkup';
 import './styles/driversRegistr.css';
-import arrowImg from './images/small-arrow.svg';
-import blackArrowImg from './images/black-arrow.svg';
-import { licenseAgreement } from './text/driversRegistr.json';
 
-function createMarkup(val) {
-  return { __html: val };
-}
-
-const DriversRegistr = () => (
+const DriversRegistr = ({ content }) => (
   <div className="form-from1024">
     <div className="inner-form-from1024">
       <div className="form-wrapper">
@@ -20,7 +16,7 @@ const DriversRegistr = () => (
               <a href="/">
                 регистрация
                 <span>
-                  <img src={blackArrowImg} alt="" />
+                  <SVG pic={content.imageBlackArrow} />
                 </span>
               </a>
             </div>
@@ -63,7 +59,7 @@ const DriversRegistr = () => (
               <div className="inner-btn-register">
                 <span className="text">зарегистрироваться</span>
                 <span className="img-box">
-                  <img src={arrowImg} alt="" />
+                  <SVG pic={content.imageSmallArrow} />
                 </span>
               </div>
             </div>
@@ -72,7 +68,9 @@ const DriversRegistr = () => (
                 Или <a href="/">зарегистрируйтесь</a> с помощью аккаунта
                 пользователя.
               </div>
-              <p dangerouslySetInnerHTML={createMarkup(licenseAgreement)} />
+              <p
+                dangerouslySetInnerHTML={createMarkup(content.licenseAgreement)}
+              />
               <a id="license-link" href="/">
                 Заявление о конфеденциальности водителя-партнера Uber
               </a>
@@ -83,5 +81,9 @@ const DriversRegistr = () => (
     </div>
   </div>
 );
+
+DriversRegistr.propTypes = {
+  content: PropTypes.object.isRequired,
+};
 
 export default DriversRegistr;
