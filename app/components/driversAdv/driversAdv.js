@@ -29,6 +29,8 @@ const DriversAdv = ({ content: { image } }) => (
 );
 
 DriversAdv.propTypes = {
-  content: PropTypes.object.isRequired,
+  content: PropTypes.shape({
+    image: PropTypes.object.isRequired,
+  }),
 };
 export default DriversAdv;

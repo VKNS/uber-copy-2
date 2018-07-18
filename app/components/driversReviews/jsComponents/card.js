@@ -18,6 +18,10 @@ const Card = ({ content: { cardNum, description, name } }) => (
 );
 
 Card.propTypes = {
-  content: PropTypes.object.isRequired,
+  content: PropTypes.shape({
+    cardNum: PropTypes.number.isRequired,
+    description: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+  }),
 };
 export default Card;

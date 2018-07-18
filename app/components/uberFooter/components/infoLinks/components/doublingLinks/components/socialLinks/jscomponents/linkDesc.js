@@ -20,7 +20,12 @@ const LinkDesc = ({ content: { link, image, descClass, description } }) => (
 );
 
 LinkDesc.propTypes = {
-  content: PropTypes.object.isRequired,
+  content: PropTypes.shape({
+    link: PropTypes.string.isRequired,
+    image: PropTypes.object.isRequired,
+    descClass: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }),
 };
 
 export default LinkDesc;

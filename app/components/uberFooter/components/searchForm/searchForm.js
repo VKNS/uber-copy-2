@@ -28,6 +28,9 @@ const SearchForm = ({ content: { image1, image2 } }) => (
 );
 
 SearchForm.propTypes = {
-  content: PropTypes.object.isRequired,
+  content: PropTypes.shape({
+    image1: PropTypes.object.isRequired,
+    image2: PropTypes.object.isRequired,
+  }),
 };
 export default SearchForm;
