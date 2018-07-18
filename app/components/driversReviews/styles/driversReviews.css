@@ -21,16 +21,25 @@
   margin-bottom: 30px;
 }
 
+.cards-box {
+  height: 100%;
+}
+
 .card {
   width: 100%;
   padding: 0px 14px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
 }
 
 .card .img-box {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 250px;
+  height: 150px;
 }
 
 .card .inner-text-box {
@@ -43,44 +52,66 @@
 }
 
 /*...............SECONDCARD...................*/
-.second-card {
-  display: none;
-}
 
 .second-card .img-box {
   background-image: url(https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/1bfa5f79-0418-4a46-8fff-9b5a4aca9943/desk.jpg);
 }
 
 /*...............THIRDCARD....................*/
-.third-card {
-  display: none;
-}
 
 .third-card .img-box {
   background-image: url(https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/01de97a8-09cb-4d61-8d36-b96b60f83e6a/desk.jpg);
 }
 
+/*...............fourthCARD....................*/
+
+.fourth-card .img-box {
+  background-image: url(https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/bb53082f-1436-453c-97d6-a48f3e3ade64/desk.jpg);
+}
+
 /*************BLOCKS-POSITIONING etc*******************/
 
-/*********************ARROW****************************/
+/*next-before buttons*/
+
+.drivers-rev button {
+  outline: none;
+}
 
 .drivers-rev .arrow-box {
-  background-color: black;
-  height: 33px;
-  width: 35px;
-  padding: 3px 6px 9px 6px;
+  background: #000000;
+  height: 46px;
+  width: 46px;
   position: relative;
+  bottom: 310px;
+}
+
+.cards-box .next {
   float: right;
-  bottom: 350px;
-  right: -20px;
-  transition: all 250ms ease;
 }
 
-.inner-drivers-rev .arrow-box:hover {
-  opacity: 0.65;
+.dot .inner-dot {
+  width: 2px;
+  background: #000000;
+  border: 2.5px solid #000000;
+  border-radius: 50%;
+  transition: all 250ms ease-in-out;
+  align-items: flex;
 }
-/*********************ARROW****************************/
 
+/********************ANIMATIONS************************/
+.arrow-box:hover {
+  opacity: 0.75;
+}
+
+.dot:active .inner-dot {
+  height: 3px;
+  width: 3px;
+  background: transparent;
+  border: 0.1px solid #000000;
+  border-radius: 50%;
+  transform: scale(2.5);
+  transition: all 250ms ease-in-out;
+}
 /**********************TEXT****************************/
 
 .drivers-adv h2,
@@ -109,29 +140,17 @@ p {
 
 /*.................FLEXIM.........................*/
 
-.cards-box {
+.dots-box {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background: transparent;
 }
 
-.first-card {
-  flex: 1;
-}
-
-.second-card {
-  flex: 1;
-}
-
-.third-card {
-  flex: 1;
-}
 /*......................SIZING...............................*/
 
 @media screen and (min-width: 769px) {
-  .second-card {
-    display: block;
-  }
-
   .header-box p {
     font-size: 19px;
   }
@@ -146,11 +165,17 @@ p {
 }
 
 @media screen and (min-width: 1025px) {
-  .third-card {
-    display: block;
-  }
-
   .inner-drivers-rev {
     padding: 60px 180px 40px 180px;
+  }
+
+  .card .img-box {
+    height: 350px;
+  }
+
+  .drivers-rev .arrow-box {
+    bottom: 800px;
+    height: 65px;
+    width: 65px;
   }
 }

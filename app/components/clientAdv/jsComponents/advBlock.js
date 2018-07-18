@@ -1,27 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SVG from '../../commonlyUsedComponents/SVG';
-import createMarkup from '../../commonlyUsedComponents/createMarkup';
+import SVG from 'components/commonlyUsedComponents/SVG/svg';
+import createMarkup from 'components/commonlyUsedComponents/createMarkup/createMarkup';
 
-const AdvBlock = props => {
-  const { content } = props;
-  return (
-    <div className="row-3">
-      <div className="imgBox">
-        <SVG pic={content.image} />
-      </div>
-      <div className="heading">
-        <h4 dangerouslySetInnerHTML={createMarkup(content.name)} />
-      </div>
-      <div className="advantages-text ">
-        <p dangerouslySetInnerHTML={createMarkup(content.description)} />
-      </div>
+const AdvBlock = ({ content: { image, name, description } }) => (
+  <div className="row-3">
+    <div className="imgBox">
+      <SVG pic={image} />
     </div>
-  );
-};
+    <div className="heading">
+      <h4 dangerouslySetInnerHTML={createMarkup(name)} />
+    </div>
+    <div className="advantages-text ">
+      <p dangerouslySetInnerHTML={createMarkup(description)} />
+    </div>
+  </div>
+);
 
 AdvBlock.propTypes = {
-  content: PropTypes.object.isRequired,
+  content: PropTypes.shape({
+    image: PropTypes.object.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }),
 };
 
 export default AdvBlock;
