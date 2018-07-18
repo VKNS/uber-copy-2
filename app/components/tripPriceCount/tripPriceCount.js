@@ -3,9 +3,17 @@ import PropTypes from 'prop-types';
 import SVG from '../commonlyUsedComponents/SVG/svg';
 import './styles/tripPriceCount.css';
 
-const TripPriceCount = ({ content }) => (
+import MyGoogleMap from './components/googleMap';
+
+const TripPriceCount = ({
+  content: {
+    image1: { img, alt },
+    image2,
+    image3,
+  },
+}) => (
   <section className="trip-price-count">
-    <img className="mapPic" src={content.image1.img} alt={content.image1.alt} />
+    <img className="mapPic" src={img} alt={alt} />
 
     <div className="outer-trip-price-form">
       <div className="trip-price-form">
@@ -22,7 +30,7 @@ const TripPriceCount = ({ content }) => (
                 <input type="text" placeholder="Введите место отправления" />
               </div>
               <div className="row btn plane">
-                <SVG pic={content.image2} />
+                <SVG pic={image2} />
               </div>
             </div>
 
@@ -31,19 +39,33 @@ const TripPriceCount = ({ content }) => (
                 <input type="text" placeholder="Введите пункт назначения" />
               </div>
               <div className="row btn arrow">
-                <SVG pic={content.image3} />
+                <SVG pic={image3} />
               </div>
             </div>
           </div>
         </div>
-        <div className="real-google-map" />
+        <div className="real-google-map">
+          <MyGoogleMap
+            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2UxlqPVCgiNVs1KOpu_LyMTIfMd7VdRg&v=3.exp&libraries=geometry,drawing,places"
+            loadingElement={<div style={{ height: `100%` }} />}
+            containerElement={<div style={{ height: `400px` }} />}
+            mapElement={<div style={{ height: `100%` }} />}
+          />
+        </div>
       </div>
     </div>
   </section>
 );
 
 TripPriceCount.propTypes = {
-  content: PropTypes.array.isRequired,
+  content: PropTypes.shape({
+    image1: PropTypes.shape({
+      img: PropTypes.string.isRequired,
+      alt: PropTypes.string.isRequired,
+    }),
+    image2: PropTypes.object.isRequired,
+    image3: PropTypes.object.isRequired,
+  }),
 };
 
 export default TripPriceCount;

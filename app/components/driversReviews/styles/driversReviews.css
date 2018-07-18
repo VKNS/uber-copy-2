@@ -52,27 +52,18 @@
 }
 
 /*...............SECONDCARD...................*/
-/*.second-card {
-  display: none;
-}*/
 
 .second-card .img-box {
   background-image: url(https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/1bfa5f79-0418-4a46-8fff-9b5a4aca9943/desk.jpg);
 }
 
 /*...............THIRDCARD....................*/
-/*.third-card {
-  display: none;
-}*/
 
 .third-card .img-box {
   background-image: url(https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/01de97a8-09cb-4d61-8d36-b96b60f83e6a/desk.jpg);
 }
 
 /*...............fourthCARD....................*/
-/*.third-card {
-  display: none;
-}*/
 
 .fourth-card .img-box {
   background-image: url(https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/bb53082f-1436-453c-97d6-a48f3e3ade64/desk.jpg);
@@ -156,23 +147,7 @@ p {
   justify-content: center;
   background: transparent;
 }
-/*
-.cards-box {
-  display: flex;
-  flex-direction: row;
-}
 
-.first-card {
-  flex: 1;
-}
-
-.second-card {
-  flex: 1;
-}
-
-.third-card {
-  flex: 1;
-}*/
 /*......................SIZING...............................*/
 
 @media screen and (min-width: 769px) {
@@ -198,8 +173,8 @@ p {
     height: 350px;
   }
 
-  .arrow-box {
-    bottom: 500px;
+  .drivers-rev .arrow-box {
+    bottom: 800px;
     height: 65px;
     width: 65px;
   }

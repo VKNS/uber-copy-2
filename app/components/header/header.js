@@ -4,12 +4,12 @@ import './styles/header.css';
 
 import SVG from '../commonlyUsedComponents/SVG/svg';
 
-const Header = ({ content }) => (
+const Header = ({ content: { image1, image2 } }) => (
   <header>
     <nav>
       <div className="row-1 logo ">
         <a href="/">
-          <SVG pic={content.image1} />
+          <SVG pic={image1} />
         </a>
       </div>
 
@@ -39,7 +39,7 @@ const Header = ({ content }) => (
 
       <div className="row-1 location-icon">
         <a href="/">
-          <SVG pic={content.image2} />
+          <SVG pic={image2} />
         </a>
       </div>
 
@@ -59,7 +59,10 @@ const Header = ({ content }) => (
 );
 
 Header.propTypes = {
-  content: PropTypes.array.isRequired,
+  content: PropTypes.shape({
+    image1: PropTypes.object.isRequired,
+    image2: PropTypes.object.isRequired,
+  }),
 };
 
 export default Header;

@@ -4,25 +4,33 @@ import SVG from 'components/commonlyUsedComponents/SVG/svg';
 import createMarkup from 'components/commonlyUsedComponents/createMarkup/createMarkup';
 import ButtonMore from './buttonMore/buttonMore';
 
-const LesserBlock = ({ content }) => (
-  <div className={`row-7 ${content.colNum}`}>
+const LesserBlock = ({
+  content: { colNum, image, title, description, buttonPic },
+}) => (
+  <div className={`row-7 ${colNum}`}>
     <div className="imgBox">
-      <SVG pic={content.image} />
+      <SVG pic={image} />
     </div>
     <div className="outer-text-box">
       <div className="heading">
-        <h4 dangerouslySetInnerHTML={createMarkup(content.title)} />
+        <h4 dangerouslySetInnerHTML={createMarkup(title)} />
       </div>
       <div className="text-box ">
-        <p dangerouslySetInnerHTML={createMarkup(content.description)} />
+        <p dangerouslySetInnerHTML={createMarkup(description)} />
       </div>
-      <ButtonMore content={content.buttonPic} />
+      <ButtonMore content={buttonPic} />
     </div>
   </div>
 );
 
 LesserBlock.propTypes = {
-  content: PropTypes.object.isRequired,
+  content: PropTypes.shape({
+    colNum: PropTypes.string.isRequired,
+    image: PropTypes.object.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    buttonPic: PropTypes.object.isRequired,
+  }),
 };
 
 export default LesserBlock;

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import SVG from '../commonlyUsedComponents/SVG/svg';
 import './styles/driversAdv.css';
 
-const DriversAdv = ({ content }) => (
+const DriversAdv = ({ content: { image } }) => (
   <section className="drivers-advantages">
     <div className="inner-box">
       <div className="header">График выбираете вы</div>
@@ -20,7 +20,7 @@ const DriversAdv = ({ content }) => (
         <div className="drivers-link">
           преимущества работы водителем-партнером uber
           <span className="arrow-box">
-            <SVG pic={content.image} />
+            <SVG pic={image} />
           </span>
         </div>
       </div>
@@ -29,6 +29,8 @@ const DriversAdv = ({ content }) => (
 );
 
 DriversAdv.propTypes = {
-  content: PropTypes.object.isRequired,
+  content: PropTypes.shape({
+    image: PropTypes.object.isRequired,
+  }),
 };
 export default DriversAdv;

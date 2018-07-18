@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const SVG = ({ pic }) => (
-  <img src={require(`../../../images/${pic.img}`)} alt={pic.alt} />
+const SVG = ({ pic: { img, alt } }) => (
+  <img src={require(`images/${img}`)} alt={alt} />
 );
 
 SVG.propTypes = {
-  pic: PropTypes.object.isRequired,
+  pic: PropTypes.shape({
+    img: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
+  }),
 };
 
 export default SVG;

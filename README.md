@@ -1,1 +1,1 @@
-copied uber landing page
+Копия лендинга убера

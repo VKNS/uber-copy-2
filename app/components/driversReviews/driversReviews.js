@@ -61,7 +61,11 @@ const DriversReviews = ({ content: { forloop, imageBefore, imageNext } }) => (
 );
 
 DriversReviews.propTypes = {
-  content: PropTypes.object.isRequired,
+  content: PropTypes.shape({
+    forloop: PropTypes.array.isRequired,
+    imageBefore: PropTypes.object.isRequired,
+    imageNext: PropTypes.object.isRequired,
+  }),
 };
 
 export default DriversReviews;

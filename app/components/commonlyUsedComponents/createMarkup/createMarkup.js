@@ -1,3 +1,1 @@
-export default function createMarkup(val) {
-  return { __html: val };
-}
+export default val => ({ __html: val });
