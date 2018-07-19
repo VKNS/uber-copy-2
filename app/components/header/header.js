@@ -59,12 +59,10 @@ const Header = ({ content: { image1, image2 } }) => (
 );
 
 Header.propTypes = {
-
   content: PropTypes.shape({
     image1: PropTypes.object.isRequired,
     image2: PropTypes.object.isRequired,
   }),
-
 };
 
 export default Header;

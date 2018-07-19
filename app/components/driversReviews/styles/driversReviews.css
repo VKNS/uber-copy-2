@@ -89,6 +89,10 @@
   float: right;
 
 }
+
+.drivers-rev .not-visible {
+  display: none;
+}
 /*---------------------DOTS-------------------------*/
 .dot .inner-dot {
   width: 2px;

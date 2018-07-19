@@ -6,12 +6,10 @@ const SVG = ({ pic: { img, alt } }) => (
 );
 
 SVG.propTypes = {
-
   pic: PropTypes.shape({
     img: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
   }),
-
 };
 
 export default SVG;

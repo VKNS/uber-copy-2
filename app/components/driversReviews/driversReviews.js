@@ -11,6 +11,9 @@ import {
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
+import classNames from 'classnames';
+
+import { firstDot, secondDot } from './constants';
 import SVG from '../commonlyUsedComponents/SVG/svg';
 import './styles/driversReviews.css';
 import Card from './jsComponents/card';
@@ -18,21 +21,24 @@ import Card from './jsComponents/card';
 
 
 class DriversReviews extends React.Component {
-  state = {
-    firstDot: 'inner-dot',
-    secondDot: 'inner-dot',
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeDot: firstDot,
+    };
+  }
 
   handleClick = id => {
-    if (id === 'firstDot') {
-      this.setState({ firstDot: 'inner-dot_clicked', secondDot: 'inner-dot' });
-    } else {
-      this.setState({ firstDot: 'inner-dot', secondDot: 'inner-dot_clicked' });
-    }
+    this.setState({
+      activeDot: id === firstDot ? firstDot : secondDot,
+    });
   };
 
   render() {
-    const { content } = this.props;
+    const {
+      content: { forloop, imageBefore, imageNext },
+    } = this.props;
+    const dotList = [firstDot, secondDot];
 
     return (
       <section className="drivers-rev">
@@ -51,7 +57,7 @@ class DriversReviews extends React.Component {
             step={2}
           >
             <Slider>
-              {content.forloop.map(card => (
+              {forloop.map(card => (
                 <Slide index={card.index}>
                   <Card content={card} />
                 </Slide>
@@ -59,34 +65,41 @@ class DriversReviews extends React.Component {
             </Slider>
 
             <ButtonBack
-              className="arrow-box before"
-              onClick={() => this.handleClick('firstDot')}
+              className={classNames({
+                'arrow-box before': true,
+                'not-visible': this.state.activeDot === firstDot,
+              })}
+              onClick={() => this.handleClick(firstDot)}
             >
-              <SVG pic={content.imageBefore} />
+              <SVG pic={imageBefore} />
             </ButtonBack>
             <ButtonNext
-              className="arrow-box next"
-              onClick={() => this.handleClick('secondDot')}
+              className={classNames({
+                'arrow-box next': true,
+                'not-visible': this.state.activeDot === secondDot,
+              })}
+              onClick={() => this.handleClick(secondDot)}
             >
-              <SVG pic={content.imageNext} />
+              <SVG pic={imageNext} />
             </ButtonNext>
 
             <div className="dots-box">
               <div className="inner-dots-box">
-                <Dot
-                  className="dot"
-                  slide={0}
-                  onClick={() => this.handleClick('firstDot')}
-                >
-                  <div className={this.state.firstDot} />
-                </Dot>
-                <Dot
-                  className="dot"
-                  slide={3}
-                  onClick={() => this.handleClick('secondDot')}
-                >
-                  <div className={`${this.state.secondDot}`} />
-                </Dot>
+                {dotList.map(num => (
+                  <Dot
+                    className="dot"
+                    slide={num}
+                    onClick={() => this.handleClick(num)}
+                  >
+                    <div
+                      className={
+                        this.state.activeDot === num
+                          ? 'inner-dot_clicked'
+                          : 'inner-dot'
+                      }
+                    />
+                  </Dot>
+                ))}
               </div>
             </div>
           </CarouselProvider>
@@ -97,8 +110,11 @@ class DriversReviews extends React.Component {
 }
 
 DriversReviews.propTypes = {
-  content: PropTypes.object,
-
+  content: PropTypes.shape({
+    forloop: PropTypes.array.isRequired,
+    imageBefore: PropTypes.object.isRequired,
+    imageNext: PropTypes.object.isRequired,
+  }),
 };
 
 export default DriversReviews;
