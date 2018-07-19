@@ -16,19 +16,24 @@ import './styles/driversReviews.css';
 import Card from './jsComponents/card';
 
 class DriversReviews extends React.Component {
-  state = {
-    activeDot: '',
-  };
+  constructor(props) {
+    super(props);
+    this.firstDot = 0;
+    this.secondDot = 3;
+    this.state = {
+      activeDot: this.firstDot,
+    };
+  }
+
   handleClick = id => {
-    if (id === 0) {
-      this.setState({ activeDot: 0 });
-    } else {
-      this.setState({ activeDot: 3 });
-    }
+    this.setState({
+      activeDot: id === this.firstDot ? this.firstDot : this.secondDot,
+    });
   };
 
   render() {
     const { content } = this.props;
+    const dotList = [this.firstDot, this.secondDot];
 
     return (
       <section className="drivers-rev">
@@ -55,21 +60,29 @@ class DriversReviews extends React.Component {
             </Slider>
 
             <ButtonBack
-              className="arrow-box before"
-              onClick={() => this.handleClick(0)}
+              className={
+                this.state.activeDot === this.firstDot
+                  ? 'arrow-box before not-visible'
+                  : 'arrow-box before'
+              }
+              onClick={() => this.handleClick(this.firstDot)}
             >
               <SVG pic={content.imageBefore} />
             </ButtonBack>
             <ButtonNext
-              className="arrow-box next"
-              onClick={() => this.handleClick(3)}
+              className={
+                this.state.activeDot === this.secondDot
+                  ? 'arrow-box next not-visible'
+                  : 'arrow-box next'
+              }
+              onClick={() => this.handleClick(this.secondDot)}
             >
               <SVG pic={content.imageNext} />
             </ButtonNext>
 
             <div className="dots-box">
               <div className="inner-dots-box">
-                {[0, 3].map(num => (
+                {dotList.map(num => (
                   <Dot
                     className="dot"
                     slide={num}
