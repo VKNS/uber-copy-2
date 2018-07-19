@@ -15,6 +15,8 @@ import SVG from '../commonlyUsedComponents/SVG/svg';
 import './styles/driversReviews.css';
 import Card from './jsComponents/card';
 
+
+
 class DriversReviews extends React.Component {
   state = {
     firstDot: 'inner-dot',
@@ -96,6 +98,7 @@ class DriversReviews extends React.Component {
 
 DriversReviews.propTypes = {
   content: PropTypes.object,
+
 };
 
 export default DriversReviews;

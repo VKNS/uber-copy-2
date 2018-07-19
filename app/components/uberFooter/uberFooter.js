@@ -12,6 +12,11 @@ const UberFooter = ({ content: { searchFormContent, socialLinks } }) => (
 );
 
 UberFooter.propTypes = {
-  content: PropTypes.object.isRequired,
+
+  content: PropTypes.shape({
+    searchFormContent: PropTypes.object.isRequired,
+    socialLinks: PropTypes.object.isRequired,
+  }),
+
 };
 export default UberFooter;

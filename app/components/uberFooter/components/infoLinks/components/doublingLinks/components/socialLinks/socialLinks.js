@@ -16,7 +16,12 @@ const SocialLinks = ({ content: { withDescription, withoutDescription } }) => (
 );
 
 SocialLinks.propTypes = {
-  content: PropTypes.object.isRequired,
+
+  content: PropTypes.shape({
+    withDescription: PropTypes.array.isRequired,
+    withoutDescription: PropTypes.array.isRequired,
+  }),
+
 };
 
 export default SocialLinks;

@@ -18,7 +18,11 @@ const AdvBlock = ({ content: { image, name, description } }) => (
 );
 
 AdvBlock.propTypes = {
-  content: PropTypes.object.isRequired,
+  content: PropTypes.shape({
+    image: PropTypes.object.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }),
 };
 
 export default AdvBlock;

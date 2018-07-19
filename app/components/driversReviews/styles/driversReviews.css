@@ -87,6 +87,7 @@
 
 .cards-box .next {
   float: right;
+
 }
 /*---------------------DOTS-------------------------*/
 .dot .inner-dot {
@@ -112,6 +113,7 @@
 .arrow-box:hover {
   opacity: 0.75;
 }
+
 
 .dot:active .inner-dot {
   height: 3px;

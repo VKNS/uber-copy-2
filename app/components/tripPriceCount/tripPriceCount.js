@@ -58,7 +58,16 @@ const TripPriceCount = ({
 );
 
 TripPriceCount.propTypes = {
-  content: PropTypes.object.isRequired,
+
+  content: PropTypes.shape({
+    image1: PropTypes.shape({
+      img: PropTypes.string.isRequired,
+      alt: PropTypes.string.isRequired,
+    }),
+    image2: PropTypes.object.isRequired,
+    image3: PropTypes.object.isRequired,
+  }),
+
 };
 
 export default TripPriceCount;

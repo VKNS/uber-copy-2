@@ -24,7 +24,13 @@ const LesserBlock = ({
 );
 
 LesserBlock.propTypes = {
-  content: PropTypes.object.isRequired,
+  content: PropTypes.shape({
+    colNum: PropTypes.string.isRequired,
+    image: PropTypes.object.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    buttonPic: PropTypes.object.isRequired,
+  }),
 };
 
 export default LesserBlock;
