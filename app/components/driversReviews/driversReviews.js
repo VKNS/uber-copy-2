@@ -18,6 +18,8 @@ import SVG from '../commonlyUsedComponents/SVG/svg';
 import './styles/driversReviews.css';
 import Card from './jsComponents/card';
 
+
+
 class DriversReviews extends React.Component {
   constructor(props) {
     super(props);

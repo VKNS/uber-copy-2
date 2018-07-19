@@ -87,6 +87,7 @@
 
 .cards-box .next {
   float: right;
+
 }
 
 .drivers-rev .not-visible {
@@ -116,6 +117,7 @@
 .arrow-box:hover {
   opacity: 0.75;
 }
+
 
 .dot:active .inner-dot {
   height: 3px;
