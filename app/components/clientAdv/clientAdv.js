@@ -17,10 +17,12 @@ const ClientAdv = ({ content: { forLoop, image } }) => (
 );
 
 ClientAdv.propTypes = {
+
   content: PropTypes.shape({
     forloop: PropTypes.array.isRequired,
     image: PropTypes.object.isRequired,
   }),
+
 };
 
 export default ClientAdv;

@@ -1,11 +1,15 @@
 import React from 'react';
+
 import { lifecycle } from 'recompose';
 import {
+
   withScriptjs,
   withGoogleMap,
   GoogleMap,
   DirectionsRenderer,
+
 } from 'react-google-maps';
+
 
 const MyGoogleMap = withScriptjs(
   withGoogleMap(

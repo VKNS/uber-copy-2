@@ -25,10 +25,12 @@ const MainAd = ({ content: { image, driversRegistr } }) => (
 );
 
 MainAd.propTypes = {
+
   content: PropTypes.shape({
     image: PropTypes.object.isRequired,
     driversRegistr: PropTypes.object.isRequired,
   }),
+
 };
 
 export default MainAd;

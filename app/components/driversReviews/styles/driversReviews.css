@@ -87,8 +87,9 @@
 
 .cards-box .next {
   float: right;
-}
 
+}
+/*---------------------DOTS-------------------------*/
 .dot .inner-dot {
   width: 2px;
   background: #000000;
@@ -98,10 +99,21 @@
   align-items: flex;
 }
 
+.dot .inner-dot_clicked {
+  height: 5px;
+  width: 5px;
+  background: transparent;
+  border: 0.4px solid #000000;
+  border-radius: 50%;
+  transform: scale(2.5);
+  transition: all 250ms ease-in-out;
+}
+
 /********************ANIMATIONS************************/
 .arrow-box:hover {
   opacity: 0.75;
 }
+
 
 .dot:active .inner-dot {
   height: 3px;

@@ -58,6 +58,7 @@ const TripPriceCount = ({
 );
 
 TripPriceCount.propTypes = {
+
   content: PropTypes.shape({
     image1: PropTypes.shape({
       img: PropTypes.string.isRequired,
@@ -66,6 +67,7 @@ TripPriceCount.propTypes = {
     image2: PropTypes.object.isRequired,
     image3: PropTypes.object.isRequired,
   }),
+
 };
 
 export default TripPriceCount;

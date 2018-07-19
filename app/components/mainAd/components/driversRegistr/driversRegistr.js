@@ -83,11 +83,13 @@ const DriversRegistr = ({
 );
 
 DriversRegistr.propTypes = {
+
   content: PropTypes.shape({
     imageBlackArrow: PropTypes.object.isRequired,
     imageSmallArrow: PropTypes.object.isRequired,
     licenseAgreement: PropTypes.string.isRequired,
   }),
+
 };
 
 export default DriversRegistr;

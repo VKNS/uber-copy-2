@@ -30,10 +30,12 @@ const CompanyAdv = ({ content: { description, image } }) => (
 );
 
 CompanyAdv.propTypes = {
+
   content: PropTypes.shape({
     description: PropTypes.string.isRequired,
     image: PropTypes.object.isRequired,
   }),
+
 };
 
 export default CompanyAdv;

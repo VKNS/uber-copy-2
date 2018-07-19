@@ -55,8 +55,7 @@ const driversReviews = {
         '"Я стал водителем-партнером Uber, потому что мне понравилась идея, что моя машина будет приносить доход. Проработав всего пару недель, я понял, что хочу заниматься этим на постоянной основе".',
       cardNum: 'first-card',
       index: 1,
-      imgUrl:
-        'https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/8e1f056b-bbe8-4910-b477-9ebe9c1356e6/palm.jpg',
+
     },
     {
       name: 'Катрина, домохозяйка и партнер из Сиэтла',
@@ -64,8 +63,7 @@ const driversReviews = {
         '"Я хотела иметь такую работу, которая позволяла бы мне знакомиться с новыми людьми и не сидеть дома. Все это стало возможно с Uber. Кроме того, я открываю для себя новые районы города, которых не видела раньше!"',
       cardNum: 'second-card',
       index: 2,
-      imgUrl:
-        'https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/1bfa5f79-0418-4a46-8fff-9b5a4aca9943/desk.jpg',
+
     },
     {
       name: 'Дженни, предприниматель и партнер из Лос-Анджелеса',
@@ -73,8 +71,7 @@ const driversReviews = {
         '"C Uber у меня всегда есть дополнительный доход и вместе с тем остается много свободного времени для любимого занятия и работы мечты — выпечки тортов".',
       cardNum: 'third-card',
       index: 3,
-      imgUrl:
-        'https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/01de97a8-09cb-4d61-8d36-b96b60f83e6a/desk.jpg',
+
     },
     {
       name: 'Шон, музыкант и партнер из Лос-Анджелеса',
@@ -82,18 +79,20 @@ const driversReviews = {
         '"Uber помогает мне добиваться целей и воплощать мечты. Я могу сосредоточиться на своем творчестве и дарить музыку людям по всему миру".',
       cardNum: 'fourth-card',
       index: 4,
-      imgUrl:
-        'https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/bb53082f-1436-453c-97d6-a48f3e3ade64/desk.jpg',
+
     },
   ],
-  imageNext: {
-    img: 'driversReviews/arrow.svg',
-    alt: 'driversReviews/arrow.svg',
-  },
+
   imageBefore: {
     img: 'driversReviews/before-arrow.svg',
     alt: 'driversReviews/before-arrow.svg',
   },
+
+  imageNext: {
+    img: 'driversReviews/arrow.svg',
+    alt: 'driversReviews/arrow.svg',
+  },
+
 };
 
 const header = {
