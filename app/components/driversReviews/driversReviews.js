@@ -17,15 +17,13 @@ import Card from './jsComponents/card';
 
 class DriversReviews extends React.Component {
   state = {
-    firstDot: 'inner-dot',
-    secondDot: 'inner-dot',
+    activeDot: '',
   };
-
   handleClick = id => {
-    if (id === 'firstDot') {
-      this.setState({ firstDot: 'inner-dot_clicked', secondDot: 'inner-dot' });
+    if (id === 0) {
+      this.setState({ activeDot: 0 });
     } else {
-      this.setState({ firstDot: 'inner-dot', secondDot: 'inner-dot_clicked' });
+      this.setState({ activeDot: 3 });
     }
   };
 
@@ -58,33 +56,34 @@ class DriversReviews extends React.Component {
 
             <ButtonBack
               className="arrow-box before"
-              onClick={() => this.handleClick('firstDot')}
+              onClick={() => this.handleClick(0)}
             >
               <SVG pic={content.imageBefore} />
             </ButtonBack>
             <ButtonNext
               className="arrow-box next"
-              onClick={() => this.handleClick('secondDot')}
+              onClick={() => this.handleClick(3)}
             >
               <SVG pic={content.imageNext} />
             </ButtonNext>
 
             <div className="dots-box">
               <div className="inner-dots-box">
-                <Dot
-                  className="dot"
-                  slide={0}
-                  onClick={() => this.handleClick('firstDot')}
-                >
-                  <div className={this.state.firstDot} />
-                </Dot>
-                <Dot
-                  className="dot"
-                  slide={3}
-                  onClick={() => this.handleClick('secondDot')}
-                >
-                  <div className={`${this.state.secondDot}`} />
-                </Dot>
+                {[0, 3].map(num => (
+                  <Dot
+                    className="dot"
+                    slide={num}
+                    onClick={() => this.handleClick(num)}
+                  >
+                    <div
+                      className={
+                        this.state.activeDot === num
+                          ? 'inner-dot_clicked'
+                          : 'inner-dot'
+                      }
+                    />
+                  </Dot>
+                ))}
               </div>
             </div>
           </CarouselProvider>
