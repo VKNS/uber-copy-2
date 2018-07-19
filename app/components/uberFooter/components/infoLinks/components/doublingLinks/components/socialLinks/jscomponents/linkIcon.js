@@ -11,7 +11,10 @@ const LinkIcon = ({ content: { link, image } }) => (
 );
 
 LinkIcon.propTypes = {
-  content: PropTypes.object.isRequired,
+  content: PropTypes.shape({
+    link: PropTypes.string.isRequired,
+    image: PropTypes.object.isRequired,
+  }),
 };
 
 export default LinkIcon;

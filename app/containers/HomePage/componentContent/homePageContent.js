@@ -78,10 +78,12 @@ const driversReviews = {
       index: 4,
     },
   ],
+
   imageBefore: {
     img: 'driversReviews/before-arrow.svg',
     alt: 'driversReviews/before-arrow.svg',
   },
+
   imageNext: {
     img: 'driversReviews/arrow.svg',
     alt: 'driversReviews/arrow.svg',
