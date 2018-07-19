@@ -11,6 +11,9 @@ import {
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
+import classNames from 'classnames';
+
+import constants from './constants';
 import SVG from '../commonlyUsedComponents/SVG/svg';
 import './styles/driversReviews.css';
 import Card from './jsComponents/card';
@@ -18,22 +21,21 @@ import Card from './jsComponents/card';
 class DriversReviews extends React.Component {
   constructor(props) {
     super(props);
-    this.firstDot = 0;
-    this.secondDot = 3;
     this.state = {
-      activeDot: this.firstDot,
+      activeDot: constants.firstDot,
     };
   }
 
   handleClick = id => {
     this.setState({
-      activeDot: id === this.firstDot ? this.firstDot : this.secondDot,
+      activeDot:
+        id === constants.firstDot ? constants.firstDot : constants.secondDot,
     });
   };
 
   render() {
     const { content } = this.props;
-    const dotList = [this.firstDot, this.secondDot];
+    const dotList = [constants.firstDot, constants.secondDot];
 
     return (
       <section className="drivers-rev">
@@ -60,22 +62,20 @@ class DriversReviews extends React.Component {
             </Slider>
 
             <ButtonBack
-              className={
-                this.state.activeDot === this.firstDot
-                  ? 'arrow-box before not-visible'
-                  : 'arrow-box before'
-              }
-              onClick={() => this.handleClick(this.firstDot)}
+              className={classNames({
+                'arrow-box before': true,
+                'not-visible': this.state.activeDot === constants.firstDot,
+              })}
+              onClick={() => this.handleClick(constants.firstDot)}
             >
               <SVG pic={content.imageBefore} />
             </ButtonBack>
             <ButtonNext
-              className={
-                this.state.activeDot === this.secondDot
-                  ? 'arrow-box next not-visible'
-                  : 'arrow-box next'
-              }
-              onClick={() => this.handleClick(this.secondDot)}
+              className={classNames({
+                'arrow-box next': true,
+                'not-visible': this.state.activeDot === constants.secondDot,
+              })}
+              onClick={() => this.handleClick(constants.secondDot)}
             >
               <SVG pic={content.imageNext} />
             </ButtonNext>
