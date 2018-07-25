@@ -5,6 +5,7 @@
 
 .weather-forecast-flex-1 {
   flex: 1;
+  padding-top: 23px;
 }
 
 .weather-forecast-flex-2 {
@@ -22,7 +23,7 @@
   padding-top: 20px;
 }
 .weather-forecast-1 .last {
-  padding-top: 25px;
+  padding-top: 24px;
 }
 
 .weather-forecast-flex-2 .img-box,
@@ -35,6 +36,12 @@
   width: 110px;
 }
 
+.weather-forecast-flex-2 h2 {
+  margin-bottom: 0px;
+}
+.weather-forecast-flex-2 p {
+  margin-top: 13px;
+}
 /*******************TEXT*************************/
 
 .weather-forecast-1 {
@@ -60,7 +67,6 @@
 
 .weather-forecast-flex-1 {
   font-size: 50px;
-  padding-top: 25px;
 }
 /*..............SIZING......................*/
 @media screen and (min-width: 769px) {
