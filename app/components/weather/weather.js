@@ -3,25 +3,26 @@ import './styles/weather.css';
 import GetWeather from './services/getWeather';
 
 class Weather extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { weather: {} };
-  }
+  state = { weather: {} };
 
   componentDidMount = async () => {
     const info = await GetWeather();
     this.setState({
-      weather: {
-        name: info.name,
-        temperature: info.main.temp,
-        pressure: info.main.pressure,
-        humidity: info.main.humidity,
-        wind: info.wind.speed,
-        description: info.weather[0].description,
-        iconUrl: `http://openweathermap.org/img/w/${info.weather[0].icon}.png`,
-      },
+      weather: this.makeState(info),
     });
   };
+
+  makeState(base) {
+    return {
+      name: base.name,
+      temperature: base.main.temp,
+      pressure: base.main.pressure,
+      humidity: base.main.humidity,
+      wind: base.wind.speed,
+      description: base.weather[0].description,
+      iconUrl: `http://openweathermap.org/img/w/${base.weather[0].icon}.png`,
+    };
+  }
 
   render() {
     const {
@@ -58,5 +59,14 @@ class Weather extends React.Component {
     );
   }
 }
+
+/* const {
+      body: {
+        name,
+        main: { temp, pressure, humidity },
+        wind: { speed },
+        weather: [{ description, icon }],
+      },
+    } = await GetWeather(); */
 
 export default Weather;

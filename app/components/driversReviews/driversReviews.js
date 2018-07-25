@@ -56,9 +56,11 @@ class DriversReviews extends React.Component {
           >
             <Slider>
               {forloop.map(card => (
-                <Slide index={card.index}>
-                  <Card content={card} />
-                </Slide>
+                <div key={card.id}>
+                  <Slide index={card.id}>
+                    <Card content={card} />
+                  </Slide>
+                </div>
               ))}
             </Slider>
 
