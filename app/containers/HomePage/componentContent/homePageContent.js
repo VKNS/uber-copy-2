@@ -55,6 +55,7 @@ const driversReviews = {
         '"Я стал водителем-партнером Uber, потому что мне понравилась идея, что моя машина будет приносить доход. Проработав всего пару недель, я понял, что хочу заниматься этим на постоянной основе".',
       cardNum: 'first-card',
       index: 1,
+      key: 1,
     },
     {
       name: 'Катрина, домохозяйка и партнер из Сиэтла',
@@ -62,6 +63,7 @@ const driversReviews = {
         '"Я хотела иметь такую работу, которая позволяла бы мне знакомиться с новыми людьми и не сидеть дома. Все это стало возможно с Uber. Кроме того, я открываю для себя новые районы города, которых не видела раньше!"',
       cardNum: 'second-card',
       index: 2,
+      key: 2,
     },
     {
       name: 'Дженни, предприниматель и партнер из Лос-Анджелеса',
@@ -69,6 +71,7 @@ const driversReviews = {
         '"C Uber у меня всегда есть дополнительный доход и вместе с тем остается много свободного времени для любимого занятия и работы мечты — выпечки тортов".',
       cardNum: 'third-card',
       index: 3,
+      key: 3,
     },
     {
       name: 'Шон, музыкант и партнер из Лос-Анджелеса',
@@ -76,6 +79,7 @@ const driversReviews = {
         '"Uber помогает мне добиваться целей и воплощать мечты. Я могу сосредоточиться на своем творчестве и дарить музыку людям по всему миру".',
       cardNum: 'fourth-card',
       index: 4,
+      key: 4,
     },
   ],
 
@@ -204,6 +208,7 @@ const uberFooter = {
     ],
     withoutDescription: [
       {
+        id: '1',
         link: '',
         image: {
           img: 'uberFooter/socialLinks/facebook-icon.svg',
@@ -211,6 +216,7 @@ const uberFooter = {
         },
       },
       {
+        id: '2',
         link: '',
         image: {
           img: 'uberFooter/socialLinks/twitter-icon.svg',
@@ -218,6 +224,7 @@ const uberFooter = {
         },
       },
       {
+        id: '3',
         link: '',
         image: {
           img: 'uberFooter/socialLinks/in-icon.svg',
@@ -225,6 +232,7 @@ const uberFooter = {
         },
       },
       {
+        id: '4',
         link: '',
         image: {
           img: 'uberFooter/socialLinks/instagram-icon.svg',

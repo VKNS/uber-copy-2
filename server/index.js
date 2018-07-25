@@ -13,7 +13,7 @@ const ngrok =
     : false;
 const { resolve } = require('path');
 const app = express();
-
+/* const cors = require('cors'); */
 // If you need a backend, e.g. an API, add your custom backend-specific middleware here
 // app.use('/api', myApi);
 
@@ -28,6 +28,7 @@ const customHost = argv.host || process.env.HOST;
 const host = customHost || null; // Let http.Server use its default IPv6/4 host
 const prettyHost = customHost || 'localhost';
 
+/* app.use(cors()); */
 // Start your app.
 app.listen(port, host, async err => {
   if (err) {

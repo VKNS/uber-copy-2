@@ -19,7 +19,7 @@ const Card = ({ content: { name, description, cardNum } }) => (
 
 Card.propTypes = {
   content: PropTypes.shape({
-    cardNum: PropTypes.number.isRequired,
+    cardNum: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
   }),
