@@ -8,7 +8,7 @@ const NewsBlock = ({ content }) => (
   <section className="news-block">
     <h2>Будьте в курсе последних новостей компании Uber</h2>
     <div className="flex-box">
-      {content.map(block => <LesserBlock content={block} />)}
+      {content.map(block => <LesserBlock key={block.id} content={block} />)}
     </div>
   </section>
 );

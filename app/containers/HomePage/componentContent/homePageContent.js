@@ -1,6 +1,7 @@
 const clientAdv = {
   forLoop: [
     {
+      id: 1,
       name: 'Просто',
       description:
         'Одно нажатие кнопки, и автомобиль подъедет прямо к вам. Водитель точно знает, куда ехать, поэтому вы можете просто наслаждаться поездкой. Добравшись до пункта назначения, поблагодарите водителя и выйдите из автомобиля. Оплата будет произведена автоматически через приложение.',
@@ -10,6 +11,7 @@ const clientAdv = {
       },
     },
     {
+      id: 2,
       name: 'Удобно',
       description:
         'Ежедневные поездки на работу и домой. Деловые встречи в разных частях города. Ранние утренние вылеты. Вечеринки допоздна. Куда бы вы ни отправлялись, вы всегда можете рассчитывать на Uber. Предварительный заказ не требуется.',
@@ -19,6 +21,7 @@ const clientAdv = {
       },
     },
     {
+      id: 3,
       name: 'Доступно',
       description:
         'Автомобили экономкласса по доступным ценам всегда в наличии. А по особым поводам или когда необходим автомобиль с большой вместимостью, заказывайте UberBLACK или SUV.',
@@ -50,36 +53,32 @@ const driversAdv = {
 const driversReviews = {
   forloop: [
     {
+      id: 1,
       name: 'Брэндон, тренер и партнер из Чикаго',
       description:
         '"Я стал водителем-партнером Uber, потому что мне понравилась идея, что моя машина будет приносить доход. Проработав всего пару недель, я понял, что хочу заниматься этим на постоянной основе".',
       cardNum: 'first-card',
-      index: 1,
-
     },
     {
+      id: 2,
       name: 'Катрина, домохозяйка и партнер из Сиэтла',
       description:
         '"Я хотела иметь такую работу, которая позволяла бы мне знакомиться с новыми людьми и не сидеть дома. Все это стало возможно с Uber. Кроме того, я открываю для себя новые районы города, которых не видела раньше!"',
       cardNum: 'second-card',
-      index: 2,
-
     },
     {
+      id: 3,
       name: 'Дженни, предприниматель и партнер из Лос-Анджелеса',
       description:
         '"C Uber у меня всегда есть дополнительный доход и вместе с тем остается много свободного времени для любимого занятия и работы мечты — выпечки тортов".',
       cardNum: 'third-card',
-      index: 3,
-
     },
     {
+      id: 4,
       name: 'Шон, музыкант и партнер из Лос-Анджелеса',
       description:
         '"Uber помогает мне добиваться целей и воплощать мечты. Я могу сосредоточиться на своем творчестве и дарить музыку людям по всему миру".',
       cardNum: 'fourth-card',
-      index: 4,
-
     },
   ],
 
@@ -118,6 +117,7 @@ const mainAd = {
 
 const newsBlock = [
   {
+    id: 1,
     colNum: 'column-1',
     image: {
       img: 'newsBlock/speaker.svg',
@@ -132,6 +132,7 @@ const newsBlock = [
     },
   },
   {
+    id: 2,
     colNum: 'column-2',
     image: {
       img: 'newsBlock/globe.svg',
@@ -180,6 +181,7 @@ const uberFooter = {
   socialLinks: {
     withDescription: [
       {
+        id: 1,
         link: '',
         image: {
           img: 'uberFooter/socialLinks/loc-icon.svg',
@@ -189,6 +191,7 @@ const uberFooter = {
         description: 'Введите Местоположение',
       },
       {
+        id: 2,
         link: '',
         image: {
           img: 'uberFooter/socialLinks/language-icon.svg',
@@ -198,6 +201,7 @@ const uberFooter = {
         description: 'русский',
       },
       {
+        id: 3,
         link: '',
         image: {
           img: 'uberFooter/socialLinks/help-icon.svg',
@@ -209,6 +213,7 @@ const uberFooter = {
     ],
     withoutDescription: [
       {
+        id: '1',
         link: '',
         image: {
           img: 'uberFooter/socialLinks/facebook-icon.svg',
@@ -216,6 +221,7 @@ const uberFooter = {
         },
       },
       {
+        id: '2',
         link: '',
         image: {
           img: 'uberFooter/socialLinks/twitter-icon.svg',
@@ -223,6 +229,7 @@ const uberFooter = {
         },
       },
       {
+        id: '3',
         link: '',
         image: {
           img: 'uberFooter/socialLinks/in-icon.svg',
@@ -230,6 +237,7 @@ const uberFooter = {
         },
       },
       {
+        id: '4',
         link: '',
         image: {
           img: 'uberFooter/socialLinks/instagram-icon.svg',

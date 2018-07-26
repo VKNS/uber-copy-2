@@ -1,0 +1,83 @@
+.weather-forecast-1 {
+  display: flex;
+  padding: 0px 24px;
+}
+
+.weather-forecast-flex-1 {
+  flex: 1;
+  padding-top: 23px;
+}
+
+.weather-forecast-flex-2 {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.weather-forecast-1 .row-1 {
+  flex: 1;
+  text-align: right;
+}
+
+.weather-forecast-1 .middle {
+  padding-top: 20px;
+}
+.weather-forecast-1 .last {
+  padding-top: 24px;
+}
+
+.weather-forecast-flex-2 .img-box,
+.temperature {
+  display: inline-block;
+}
+
+.weather-forecast-flex-2 img {
+  height: 110px;
+  width: 110px;
+}
+
+.weather-forecast-flex-2 h2 {
+  margin-bottom: 0px;
+}
+.weather-forecast-flex-2 p {
+  margin-top: 13px;
+}
+/*******************TEXT*************************/
+
+.weather-forecast-1 {
+  opacity: 0.7;
+}
+
+.weather-forecast-flex-2 h2 {
+  font-weight: 400;
+}
+
+.weather-forecast-flex-2 p {
+  font-size: 22px;
+  font-weight: 450;
+}
+
+.weather-forecast-flex-2 .temperature {
+  font-size: 50px;
+}
+
+.weather-forecast-flex-2 .other {
+  font-size: 18px;
+}
+
+.weather-forecast-flex-1 {
+  font-size: 50px;
+}
+/*..............SIZING......................*/
+@media screen and (min-width: 769px) {
+  .weather-forecast-flex-2 {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .weather-forecast-1 {
+    padding: 10px 60px;
+  }
+}

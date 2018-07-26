@@ -8,7 +8,7 @@ import Button from './jsComponents/button';
 const ClientAdv = ({ content: { forLoop, image } }) => (
   <section className="clients-adv">
     <div className="row">
-      {forLoop.map(block => <AdvBlock content={block} />)}
+      {forLoop.map(block => <AdvBlock key={block.id} content={block} />)}
     </div>
     <div className="row-4">
       <Button pic={image} />
@@ -18,7 +18,7 @@ const ClientAdv = ({ content: { forLoop, image } }) => (
 
 ClientAdv.propTypes = {
   content: PropTypes.shape({
-    forloop: PropTypes.array.isRequired,
+    forLoop: PropTypes.array.isRequired,
     image: PropTypes.object.isRequired,
   }),
 };

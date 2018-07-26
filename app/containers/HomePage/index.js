@@ -10,15 +10,18 @@
  */
 
 import React from 'react';
+
 import Header from 'components/header/header';
 import MainAd from 'components/mainAd/mainAd';
 import ClientAdv from 'components/clientAdv/clientAdv';
+import Weather from 'components/weather/weather';
 import TripPriceCount from 'components/tripPriceCount/tripPriceCount';
 import DriversAdv from 'components/driversAdv/driversAdv';
 import DriversReviews from 'components/driversReviews/driversReviews';
 import CompanyAdv from 'components/companyAdv/companyAdv';
 import NewsBlock from 'components/newsBlock/newsBlock';
 import UberFooter from 'components/uberFooter/uberFooter';
+
 import './styles/homePage.css';
 
 import {
@@ -38,6 +41,7 @@ const HomePage = () => (
     <Header content={header} />
     <MainAd content={mainAd} />
     <ClientAdv content={clientAdv} />
+    <Weather />
     <TripPriceCount content={tripPriceCount} />
     <DriversAdv content={driversAdv} />
     <DriversReviews content={driversReviews} />

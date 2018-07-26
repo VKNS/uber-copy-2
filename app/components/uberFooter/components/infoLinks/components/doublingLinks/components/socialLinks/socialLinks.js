@@ -7,10 +7,10 @@ import LinkIcon from './jscomponents/linkIcon';
 
 const SocialLinks = ({ content: { withDescription, withoutDescription } }) => (
   <div className="social-links">
-    {withDescription.map(obj => <LinkDesc content={obj} />)}
+    {withDescription.map(obj => <LinkDesc key={obj.id} content={obj} />)}
 
     <div className="soc-column mass-icons">
-      {withoutDescription.map(obj => <LinkIcon content={obj} />)}
+      {withoutDescription.map(obj => <LinkIcon key={obj.id} content={obj} />)}
     </div>
   </div>
 );
