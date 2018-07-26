@@ -13,7 +13,14 @@ class Weather extends React.Component {
     const info = await GetWeather();
     this.setState({
       weather: this.makeState(info),
-    });
+    }); /*
+    try {
+      this.setState({
+        weather: this.makeState(info),
+      });
+    } catch (e) {
+      throw new UserException(`ERROR IN getWeatherData: ${e}`);
+    } */
   };
 
   makeState(info) {
