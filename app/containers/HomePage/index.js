@@ -22,6 +22,7 @@ import CompanyAdv from 'components/companyAdv/companyAdv';
 import NewsBlock from 'components/newsBlock/newsBlock';
 import UberFooter from 'components/uberFooter/uberFooter';
 
+import ToDoApp from 'components/toDoApp/toDoApp';
 import './styles/homePage.css';
 
 import {
@@ -38,6 +39,7 @@ import {
 
 const HomePage = () => (
   <div className="container">
+    <ToDoApp />
     <Header content={header} />
     <MainAd content={mainAd} />
     <ClientAdv content={clientAdv} />
@@ -52,3 +54,6 @@ const HomePage = () => (
 );
 
 export default HomePage;
+/*
+
+*/

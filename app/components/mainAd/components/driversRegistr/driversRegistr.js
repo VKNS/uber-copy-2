@@ -36,26 +36,29 @@ const DriversRegistr = ({
           <div className="form">
             <div className="ns-outer window-input ">
               <div className="ns border">
-                <input placeholder="Имя" />
+                <input placeholder="Имя" autoComplete="on" />
               </div>
               <div className=" ns border">
-                <input placeholder="Фамилия" />
+                <input placeholder="Фамилия" autoComplete="on" />
               </div>
             </div>
             <div className="window-input border ">
-              <input placeholder="Эл. почта" />
+              <input placeholder="Эл. почта" autoComplete="on" />
             </div>
             <div className="window-input border ">
-              <input placeholder="Телефон" />
+              <input placeholder="Телефон" autoComplete="on" />
             </div>
             <div className="window-input border ">
-              <input placeholder="Создать пароль" />
+              <input placeholder="Создать пароль" autoComplete="on" />
             </div>
             <div className="window-input border city-input">
-              <input placeholder="Город" />
+              <input placeholder="Город" autoComplete="on" />
             </div>
             <div className="window-input border code-input">
-              <input placeholder="Пригласительный код (необязательно)" />
+              <input
+                placeholder="Пригласительный код (необязательно)"
+                autoComplete="on"
+              />
             </div>
             <div className="btn-register ">
               <div className="inner-btn-register">

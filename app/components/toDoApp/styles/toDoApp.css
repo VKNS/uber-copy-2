@@ -1,0 +1,56 @@
+.todoapp {
+  height: 100;
+  padding-bottom: 700px;
+}
+
+.todoapp .display-box {
+  padding: 0px 200px;
+  background: #ada5a5d5;
+}
+
+.todoapp .input {
+  padding: 20px 200px;
+  background: #d42d2dd5;
+  width: 100%;
+}
+
+.todoapp .inp {
+  background-color: #fff;
+}
+
+#inp1 {
+  height: 50px;
+  width: 100%;
+}
+
+.todoapp input {
+  height: 40px;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.todoapp .input button {
+  height: 30px;
+  width: 50px;
+  background: #000000;
+  color: #fff;
+}
+
+.todoapp button:hover {
+  cursor: pointer;
+}
+
+.todoapp li:hover {
+  cursor: pointer;
+}
+
+.todoapp .done {
+  text-decoration: line-through;
+}
+
+.todoapp .button-box {
+  height: 29px;
+  width: 50px;
+  background: #0eb13f;
+  display: inline-block;
+}

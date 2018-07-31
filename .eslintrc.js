@@ -45,6 +45,9 @@ module.exports = {
     'jsx-a11y/mouse-events-have-key-events': 2,
     'jsx-a11y/role-has-required-aria-props': 2,
     'jsx-a11y/role-supports-aria-props': 2,
+    'jsx-a11y/no-static-element-interactions': 0,
+    'jsx-a11y/click-events-have-key-events': 0,
+    'jsx-a11y/no-noninteractive-element-interactions': 0,
     'max-len': 0,
     'newline-per-chained-call': 0,
     'no-confusing-arrow': 0,
@@ -65,6 +68,9 @@ module.exports = {
     'require-yield': 0,
     'no-undef': 0,
     'global-require': 0,
+    'consistent-return': 0,
+    'no-plusplus': 0,
+    'no-return-assign': 0,
   },
   settings: {
     'import/resolver': {

@@ -7,13 +7,6 @@ const GetWeather = async () => {
   const resp = await request.get(url);
   const body = await resp.data;
   return body;
-  /* try {
-    const resp = await request.get(url);
-    const body = await resp.data;
-    return body;
-  } catch (e) {
-    throw new UserException(`ERROR IN GETWEATHER: ${e}`);
-  } */
 };
 
 export default GetWeather;
